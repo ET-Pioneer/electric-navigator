@@ -1,11 +1,13 @@
 # ⚡ Electric Technocracy Pioneers Community Navigator
 
-https://et-pioneer.github.io/electric-navigator/
-https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/
-https://zenodo.org/communities/electric-technocracy
+🌐 https://et-pioneer.github.io/electric-navigator/
 
+🌐 https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/
 
-🗨️ World Succession Deed GPT https://chatgpt.com/g/g-69d82340e27081918e08803ce62e46e1-new-international-law-world-succession-deed-1400
+🌐 https://zenodo.org/communities/electric-technocracy
+
+🗨️ World Succession Deed GPT 
+https://chatgpt.com/g/g-69d82340e27081918e08803ce62e46e1-new-international-law-world-succession-deed-1400
 
 🗨️ Electric Technocracy GPT
 https://chatgpt.com/g/g-69d8635591d48191adc315b8f2b8be32-electric-technocracy-a-new-form-of-government
