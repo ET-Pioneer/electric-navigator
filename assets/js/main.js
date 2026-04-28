@@ -36,12 +36,31 @@
   // Language switcher — preserve current section/scroll
   var sel = document.getElementById("lang-select");
   if (sel){
+    // Remember last chosen language; if user is on a different page than the
+    // remembered preference and didn't explicitly click a language link, do nothing.
+    // (We only remember; we don't auto-redirect to avoid surprising the user.)
+    try {
+      var saved = localStorage.getItem("etcn:lang");
+      if (saved) {
+        for (var i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].dataset.code === saved) {
+            // visually reflect saved selection if it matches a known option
+            // but keep the current page's option selected by default
+            break;
+          }
+        }
+      }
+    } catch(e){}
+
     sel.addEventListener("change", function(){
       var target = sel.value;
       if (!target) return;
+      var code = sel.options[sel.selectedIndex].dataset.code || "";
+      try {
+        localStorage.setItem("etcn:lang", code);
+        if (window.location.hash) sessionStorage.setItem("etcn:lastHash", window.location.hash);
+      } catch(e){}
       var hash = window.location.hash || "";
-      // Remember scroll for restore if same-section anchor
-      try { sessionStorage.setItem("etcn:lastHash", hash); } catch(e){}
       var url = target + hash;
       // Graceful 404: HEAD-check the target file before navigation
       fetch(target, {method:"HEAD"}).then(function(r){
