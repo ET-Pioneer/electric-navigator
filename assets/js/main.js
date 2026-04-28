@@ -36,22 +36,6 @@
   // Language switcher — preserve current section/scroll
   var sel = document.getElementById("lang-select");
   if (sel){
-    // Remember last chosen language; if user is on a different page than the
-    // remembered preference and didn't explicitly click a language link, do nothing.
-    // (We only remember; we don't auto-redirect to avoid surprising the user.)
-    try {
-      var saved = localStorage.getItem("etcn:lang");
-      if (saved) {
-        for (var i = 0; i < sel.options.length; i++) {
-          if (sel.options[i].dataset.code === saved) {
-            // visually reflect saved selection if it matches a known option
-            // but keep the current page's option selected by default
-            break;
-          }
-        }
-      }
-    } catch(e){}
-
     sel.addEventListener("change", function(){
       var target = sel.value;
       if (!target) return;
@@ -59,6 +43,10 @@
       try {
         localStorage.setItem("etcn:lang", code);
         if (window.location.hash) sessionStorage.setItem("etcn:lastHash", window.location.hash);
+        sessionStorage.setItem("etcn:scrollY", String(window.scrollY || window.pageYOffset || 0));
+        var af = document.activeElement;
+        if (af && af.id) sessionStorage.setItem("etcn:focusId", af.id);
+        else sessionStorage.removeItem("etcn:focusId");
       } catch(e){}
       var hash = window.location.hash || "";
       var url = target + hash;
@@ -87,11 +75,23 @@
     n.textContent = "The requested page (" + target + ") is not available yet. Please choose another language.";
   }
 
-  // Restore hash scroll after language switch (browser handles it, but ensure smooth)
-  if (window.location.hash){
-    var el = document.querySelector(window.location.hash);
-    if (el) setTimeout(function(){ el.scrollIntoView({behavior:"auto", block:"start"}); }, 0);
-  }
+  // Restore scroll/focus after language switch (RTL-safe; works when dir flips)
+  try {
+    var savedY = sessionStorage.getItem("etcn:scrollY");
+    var savedFocus = sessionStorage.getItem("etcn:focusId");
+    if (window.location.hash){
+      var el = document.querySelector(window.location.hash);
+      if (el) setTimeout(function(){ el.scrollIntoView({behavior:"auto", block:"start"}); }, 0);
+    } else if (savedY !== null){
+      setTimeout(function(){ window.scrollTo(0, parseInt(savedY,10) || 0); }, 0);
+    }
+    if (savedFocus){
+      var fEl = document.getElementById(savedFocus);
+      if (fEl && typeof fEl.focus === "function") setTimeout(function(){ fEl.focus({preventScroll:true}); }, 0);
+    }
+    sessionStorage.removeItem("etcn:scrollY");
+    sessionStorage.removeItem("etcn:focusId");
+  } catch(e){}
 
   // Graceful broken-link guard for archive/PDF anchors
   document.querySelectorAll("a[data-check='1']").forEach(function(a){

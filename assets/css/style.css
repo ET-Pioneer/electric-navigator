@@ -145,6 +145,9 @@ a:hover{color:var(--nato-accent)}
 }
 .pdf-card h3{margin:.25rem 0 .25rem;color:var(--nato-blue);font-size:1.1rem}
 .pdf-card p{color:var(--muted);margin:0 0 .75rem;flex:1}
+.pdf-card .pdf-type{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--nato-blue);font-weight:600;flex:0;margin:0 0 .5rem}
+.archive-repo{margin:.25rem 0 1rem;font-size:.95rem}
+.archive-repo a{color:var(--nato-blue);font-weight:600}
 .pdf-icon{
   align-self:flex-start;background:var(--nato-blue);color:#fff;
   font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:.75rem;
