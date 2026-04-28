@@ -1,12 +1,26 @@
 # ⚡ Electric Technocracy Pioneers Community Navigator
 
-![Electric Technocracy](https://img.shields.io/badge/Electric-Technocracy-blueviolet)
-![ASI Governance](https://img.shields.io/badge/ASI-Governance-00bcd4)
-![Direct Digital Democracy](https://img.shields.io/badge/Direct%20Digital-Democracy-4caf50)
-![Universal Basic Income](https://img.shields.io/badge/UBI-World%20Dividend-gold)
-![Tech Tax](https://img.shields.io/badge/Tech--Tax-Machine%20Productivity-orange)
-![Post Scarcity](https://img.shields.io/badge/Post--Scarcity-Abundance-brightgreen)
-![Juridical Singularity](https://img.shields.io/badge/Juridical-Singularity-red)
+https://et-pioneer.github.io/electric-navigator/
+https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/
+https://zenodo.org/communities/electric-technocracy
+
+
+🗨️ World Succession Deed GPT https://chatgpt.com/g/g-69d82340e27081918e08803ce62e46e1-new-international-law-world-succession-deed-1400
+
+🗨️ Electric Technocracy GPT
+https://chatgpt.com/g/g-69d8635591d48191adc315b8f2b8be32-electric-technocracy-a-new-form-of-government
+
+🗨️ Juridical SINGULARITY GPT
+https://chatgpt.com/g/g-69d95a89896081918fcb207e1665bf26-juridical-singularity-domestic-international-law
+
+🗨️ A Complete MICRONATION Guide GPT
+https://chatgpt.com/g/g-69d98081a2c881919de667f21dd2063c-a-complete-micronation-guide
+
+🗨️ AGE OF TRANSITION & THE MENTAL SINGULARITY GPT 
+https://chatgpt.com/g/g-69d99f78d6a081919cd29d8d33531852-age-of-transition-the-mental-singularity
+ 
+🗨️ Kreuzbergkaserne Research GPT
+https://chatgpt.com/g/g-69e02f1a2f608191b164d972f49876f7-kreuzbergkaserne-research-gpt
 
 ## Welcome
 
@@ -574,3 +588,57 @@ Knowledge should not be monopolized by credential hierarchies.
 
 ---
 
+## Repository Navigation
+
+This repository may serve as a central navigator for the ecosystem.
+
+Suggested structure:
+
+```text
+Electric-Technocracy-Pioneers-Community/
+│
+├── README.md
+├── docs/
+│   ├── electric-technocracy.md
+│   ├── juridical-singularity.md
+│   ├── world-succession-deed.md
+│   ├── direct-digital-democracy.md
+│   ├── asi-governance.md
+│   ├── tech-tax.md
+│   ├── universal-basic-income.md
+│   ├── post-scarcity.md
+│   ├── sentient-ai-rights.md
+│   └── glossary.md
+│
+├── research/
+│   ├── legal/
+│   ├── ai-governance/
+│   ├── economics/
+│   ├── infrastructure/
+│   ├── biotechnology/
+│   ├── education/
+│   └── security/
+│
+├── media/
+│   ├── podcasts/
+│   ├── videos/
+│   ├── diagrams/
+│   └── presentations/
+│
+├── translations/
+│   ├── de/
+│   ├── en/
+│   ├── es/
+│   ├── fr/
+│   └── other/
+│
+├── wiki/
+│   ├── concepts/
+│   ├── treaty-chains/
+│   ├── governance/
+│   └── future-society/
+│
+└── links/
+    ├── official-links.md
+    ├── publications.md
+    └── archives.md
