@@ -178,4 +178,51 @@
       console.groupEnd();
     }
   })();
+
+  // ─── Language Content Validator (index.html / united_fr.html / united_es.html) ───
+  (function langContentCheck(){
+    var file = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
+    if (file === "" || file === "world") file = "index.html";
+    // Marker words that should NOT appear on a page of a different language
+    var markers = {
+      en: ["Welcome to the institutional navigator", "Community Navigator", "Mission"],
+      fr: ["Navigateur communautaire", "Bienvenue sur le navigateur", "Notre mission"],
+      es: ["Navegador comunitario", "Bienvenido al navegador", "Nuestra misión"]
+    };
+    var expected = null;
+    if (file === "index.html") expected = "en";
+    else if (file === "united_fr.html") expected = "fr";
+    else if (file === "united_es.html") expected = "es";
+    if (!expected) return;
+
+    var main = document.getElementById("main") || document.body;
+    // Get visible text only (exclude nav/footer/lang switcher)
+    var clone = main.cloneNode(true);
+    clone.querySelectorAll("nav, header, footer, .lang-grid, #lang-select, script, style, [hidden]").forEach(function(el){ el.remove(); });
+    var text = (clone.textContent || "").replace(/\s+/g, " ");
+
+    var leaks = [];
+    Object.keys(markers).forEach(function(lng){
+      if (lng === expected) return;
+      markers[lng].forEach(function(m){
+        if (text.indexOf(m) !== -1){
+          leaks.push("Found '" + lng.toUpperCase() + "' text on " + expected.toUpperCase() + " page: \"" + m + "\"");
+        }
+      });
+    });
+
+    // Also confirm at least one expected marker IS present
+    var hasOwn = markers[expected].some(function(m){ return text.indexOf(m) !== -1; });
+    if (!hasOwn){
+      leaks.push("Expected " + expected.toUpperCase() + " marker text not found on " + file);
+    }
+
+    if (leaks.length === 0){
+      console.log("%c✅ Language content OK (" + expected.toUpperCase() + ") on " + file, "color:green;font-weight:bold");
+    } else {
+      console.group("%c⚠️ Language leakage on " + file + " (" + leaks.length + " issue(s))", "color:red;font-weight:bold");
+      leaks.forEach(function(l){ console.warn(l); });
+      console.groupEnd();
+    }
+  })();
 })();
