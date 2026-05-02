@@ -43,6 +43,17 @@
   // Language switcher — highlight current page and preserve section/scroll
   var sel = document.getElementById("lang-select");
   if (sel){
+    // Ensure an aria-live region exists for screen reader announcements
+    var live = document.getElementById("lang-live");
+    if (!live){
+      live = document.createElement("div");
+      live.id = "lang-live";
+      live.setAttribute("role", "status");
+      live.setAttribute("aria-live", "polite");
+      live.setAttribute("aria-atomic", "true");
+      live.style.cssText = "position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;";
+      document.body.appendChild(live);
+    }
     // Determine current file
     var currentFile = window.location.pathname.split("/").pop() || "index.html";
     if (currentFile === "" || currentFile === "world") currentFile = "index.html";
@@ -57,6 +68,12 @@
       var target = sel.value;
       if (!target) return;
       var code = sel.options[sel.selectedIndex].dataset.code || "";
+      var label = sel.options[sel.selectedIndex].text || code || target;
+      // Announce to screen readers
+      try {
+        live.textContent = "";
+        setTimeout(function(){ live.textContent = "Loading language: " + label; }, 30);
+      } catch(e){}
       try {
         localStorage.setItem("etcn:lang", code);
         if (window.location.hash) sessionStorage.setItem("etcn:lastHash", window.location.hash);
@@ -183,11 +200,27 @@
   (function langContentCheck(){
     var file = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
     if (file === "" || file === "world") file = "index.html";
-    // Marker words that should NOT appear on a page of a different language
+    // Marker words that should NOT appear on a page of a different language.
+    // Each list mixes headings, body phrases, and unique placeholders.
     var markers = {
-      en: ["Welcome to the institutional navigator", "Community Navigator", "Mission"],
-      fr: ["Navigateur communautaire", "Bienvenue sur le navigateur", "Notre mission"],
-      es: ["Navegador comunitario", "Bienvenido al navegador", "Nuestra misión"]
+      en: [
+        "Welcome to the institutional navigator", "Community Navigator",
+        "Welcome", "Our Mission", "Electric Technocracy",
+        "Age of Transition", "Juridical Singularity", "World Succession Deed",
+        "PDF Archive", "Important Links"
+      ],
+      fr: [
+        "Navigateur communautaire", "Bienvenue sur le navigateur",
+        "Bienvenue", "Notre mission", "Technocratie électrique",
+        "Âge de transition", "Singularité juridique", "Acte de succession mondiale",
+        "Archive PDF", "Liens importants"
+      ],
+      es: [
+        "Navegador comunitario", "Bienvenido al navegador",
+        "Bienvenido", "Nuestra misión", "Tecnocracia eléctrica",
+        "Era de transición", "Singularidad jurídica", "Escritura de Sucesión Mundial",
+        "Archivo PDF", "Enlaces importantes"
+      ]
     };
     var expected = null;
     if (file === "index.html") expected = "en";
@@ -223,6 +256,42 @@
       console.group("%c⚠️ Language leakage on " + file + " (" + leaks.length + " issue(s))", "color:red;font-weight:bold");
       leaks.forEach(function(l){ console.warn(l); });
       console.groupEnd();
+      renderLangWarning(expected, file, leaks);
+    }
+
+    function renderLangWarning(expected, file, leaks){
+      try {
+        var existing = document.getElementById("lang-leak-warning");
+        if (existing) existing.remove();
+        var box = document.createElement("aside");
+        box.id = "lang-leak-warning";
+        box.setAttribute("role", "alert");
+        box.setAttribute("aria-live", "assertive");
+        box.style.cssText =
+          "position:fixed;bottom:16px;right:16px;max-width:380px;z-index:9999;" +
+          "background:#7a1d1d;color:#fff;padding:14px 16px;border-radius:10px;" +
+          "box-shadow:0 8px 24px rgba(0,0,0,.35);font:14px/1.4 system-ui,sans-serif;";
+        var title = document.createElement("strong");
+        title.textContent = "⚠️ Language content issue on " + file + " (expected " + expected.toUpperCase() + ")";
+        title.style.cssText = "display:block;margin-bottom:6px;font-size:14px;";
+        box.appendChild(title);
+        var list = document.createElement("ul");
+        list.style.cssText = "margin:0 0 8px 18px;padding:0;font-size:12px;";
+        leaks.slice(0, 6).forEach(function(l){
+          var li = document.createElement("li");
+          li.textContent = l;
+          list.appendChild(li);
+        });
+        box.appendChild(list);
+        var close = document.createElement("button");
+        close.type = "button";
+        close.textContent = "Dismiss";
+        close.setAttribute("aria-label", "Dismiss language warning");
+        close.style.cssText = "background:#fff;color:#7a1d1d;border:0;border-radius:6px;padding:6px 10px;font-weight:600;cursor:pointer;";
+        close.addEventListener("click", function(){ box.remove(); });
+        box.appendChild(close);
+        document.body.appendChild(box);
+      } catch(e){}
     }
   })();
 })();
