@@ -43,6 +43,17 @@
   // Language switcher — highlight current page and preserve section/scroll
   var sel = document.getElementById("lang-select");
   if (sel){
+    // Ensure an aria-live region exists for screen reader announcements
+    var live = document.getElementById("lang-live");
+    if (!live){
+      live = document.createElement("div");
+      live.id = "lang-live";
+      live.setAttribute("role", "status");
+      live.setAttribute("aria-live", "polite");
+      live.setAttribute("aria-atomic", "true");
+      live.style.cssText = "position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;";
+      document.body.appendChild(live);
+    }
     // Determine current file
     var currentFile = window.location.pathname.split("/").pop() || "index.html";
     if (currentFile === "" || currentFile === "world") currentFile = "index.html";
@@ -57,6 +68,12 @@
       var target = sel.value;
       if (!target) return;
       var code = sel.options[sel.selectedIndex].dataset.code || "";
+      var label = sel.options[sel.selectedIndex].text || code || target;
+      // Announce to screen readers
+      try {
+        live.textContent = "";
+        setTimeout(function(){ live.textContent = "Loading language: " + label; }, 30);
+      } catch(e){}
       try {
         localStorage.setItem("etcn:lang", code);
         if (window.location.hash) sessionStorage.setItem("etcn:lastHash", window.location.hash);
