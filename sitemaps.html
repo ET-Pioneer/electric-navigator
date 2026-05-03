@@ -29,13 +29,15 @@
 <body>
   <h1>🌐 Sitemap & hreflang Overview</h1>
   <p class="meta" id="meta">Loading…</p>
+  <div id="status" role="status" aria-live="polite" aria-atomic="true"
+       style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"></div>
   <input id="filter" placeholder="Filter language or file…" />
   <div class="summary" id="summary"></div>
   <table>
     <thead>
       <tr>
         <th>#</th><th>Lang</th><th>Page</th><th>URL</th><th>Sitemap</th>
-        <th>Page reachable</th><th>Sitemap reachable</th><th>hreflang count</th>
+        <th>Page status</th><th>Sitemap status</th><th>hreflang</th><th>Missing languages</th>
       </tr>
     </thead>
     <tbody id="rows"></tbody>
@@ -45,50 +47,83 @@
   (async function () {
     const res = await fetch('sitemaps/sitemaps.json', {cache:'no-store'});
     const data = await res.json();
+    const expectedLangs = new Set(data.pages.map(p => p.lang));
+    const status = document.getElementById('status');
+    const announce = (msg) => { status.textContent = ''; setTimeout(() => status.textContent = msg, 50); };
     document.getElementById('meta').textContent =
       `Generated ${data.generated} · Base: ${data.base} · ${data.pages.length} languages`;
+    announce(`Loading ${data.pages.length} pages and sitemaps…`);
 
     const rows = document.getElementById('rows');
     const checks = await Promise.all(data.pages.map(async (p, i) => {
-      const [pageOk, smapText] = await Promise.all([
-        fetch(p.file, {method:'HEAD'}).then(r => r.ok).catch(() => false),
-        fetch(p.sitemap, {cache:'no-store'}).then(r => r.ok ? r.text() : '').catch(() => '')
-      ]);
-      const hreflangCount = (smapText.match(/hreflang=/g) || []).length;
-      return {...p, idx:i+1, pageOk, smapOk: !!smapText, hreflangCount};
+      let pageStatus = 0, pageError = '';
+      try {
+        const r = await fetch(p.file, {method:'GET', cache:'no-store'});
+        pageStatus = r.status;
+        if (!r.ok) pageError = `${r.status} ${r.statusText || ''}`.trim();
+        else { const t = await r.text(); if (!t || t.length < 50) pageError = 'Empty response'; }
+      } catch (e) { pageError = 'Network: ' + e.message; }
+
+      let smapStatus = 0, smapError = '', smapText = '';
+      try {
+        const r = await fetch(p.sitemap, {method:'GET', cache:'no-store'});
+        smapStatus = r.status;
+        if (!r.ok) smapError = `${r.status} ${r.statusText || ''}`.trim();
+        else smapText = await r.text();
+      } catch (e) { smapError = 'Network: ' + e.message; }
+
+      // Parse hreflang attributes from sitemap XML
+      const hreflangs = [];
+      const re = /hreflang=["']([^"']+)["']/g; let m;
+      while ((m = re.exec(smapText)) !== null) hreflangs.push(m[1]);
+      const found = new Set(hreflangs.filter(l => l !== 'x-default'));
+      const missing = [...expectedLangs].filter(l => !found.has(l));
+
+      return {...p, idx:i+1, pageStatus, pageError,
+              smapStatus, smapError, hreflangCount: hreflangs.length, missing};
     }));
 
     function render(filter='') {
       const f = filter.toLowerCase();
       rows.innerHTML = '';
-      checks
-        .filter(c => !f || c.lang.includes(f) || c.file.toLowerCase().includes(f))
-        .forEach(c => {
+      const visible = checks.filter(c => !f || c.lang.includes(f) || c.file.toLowerCase().includes(f));
+      visible.forEach(c => {
           const tr = document.createElement('tr');
+          const pageOk = c.pageStatus >= 200 && c.pageStatus < 400 && !c.pageError;
+          const smapOk = c.smapStatus >= 200 && c.smapStatus < 400 && !c.smapError;
+          const fullHl = c.missing.length === 0 && c.hreflangCount > 0;
           tr.innerHTML = `
             <td>${c.idx}</td>
             <td><code>${c.lang}</code></td>
             <td><a href="${c.file}">${c.file}</a></td>
             <td><a href="${c.url}" target="_blank" rel="noopener">${c.url}</a></td>
             <td><a href="${c.sitemap}" target="_blank">${c.sitemap}</a></td>
-            <td class="${c.pageOk?'ok':'bad'}">${c.pageOk?'✅':'❌'}</td>
-            <td class="${c.smapOk?'ok':'bad'}">${c.smapOk?'✅':'❌'}</td>
-            <td class="${c.hreflangCount>=data.pages.length?'ok':'bad'}">${c.hreflangCount}</td>`;
+            <td class="${pageOk?'ok':'bad'}" title="${c.pageError||''}">
+              ${pageOk?'✅ '+c.pageStatus:'❌ '+(c.pageError||c.pageStatus||'fail')}</td>
+            <td class="${smapOk?'ok':'bad'}" title="${c.smapError||''}">
+              ${smapOk?'✅ '+c.smapStatus:'❌ '+(c.smapError||c.smapStatus||'fail')}</td>
+            <td class="${fullHl?'ok':'bad'}">${c.hreflangCount}</td>
+            <td class="${c.missing.length?'bad':'ok'}">
+              ${c.missing.length ? c.missing.map(l=>`<code>${l}</code>`).join(' ') : '—'}</td>`;
           rows.appendChild(tr);
         });
+      announce(`${visible.length} of ${checks.length} rows shown${f?` for filter "${f}"`:''}.`);
     }
     render();
-    document.getElementById('filter').addEventListener('input', e => render(e.target.value));
+    let t; document.getElementById('filter').addEventListener('input', e => {
+      clearTimeout(t); const v = e.target.value; t = setTimeout(() => render(v), 200);
+    });
 
-    const okPages = checks.filter(c=>c.pageOk).length;
-    const okSmaps = checks.filter(c=>c.smapOk).length;
-    const fullHl  = checks.filter(c=>c.hreflangCount>=data.pages.length).length;
+    const okPages = checks.filter(c=>c.pageStatus>=200 && c.pageStatus<400 && !c.pageError).length;
+    const okSmaps = checks.filter(c=>c.smapStatus>=200 && c.smapStatus<400 && !c.smapError).length;
+    const fullHl  = checks.filter(c=>c.missing.length===0 && c.hreflangCount>0).length;
     document.getElementById('summary').innerHTML = `
       <span class="pill ${okPages===checks.length?'ok':'bad'}">Pages OK: ${okPages}/${checks.length}</span>
       <span class="pill ${okSmaps===checks.length?'ok':'bad'}">Sitemaps OK: ${okSmaps}/${checks.length}</span>
       <span class="pill ${fullHl===checks.length?'ok':'bad'}">Full hreflang matrix: ${fullHl}/${checks.length}</span>
       <span class="pill"><a href="sitemap.xml">sitemap.xml</a></span>
       <span class="pill"><a href="sitemap-index.xml">sitemap-index.xml</a></span>`;
+    announce(`Loaded. Pages OK ${okPages} of ${checks.length}. Sitemaps OK ${okSmaps}. Full hreflang ${fullHl}.`);
   })();
   </script>
 </body>
