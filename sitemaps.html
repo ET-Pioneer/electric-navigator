@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sitemap & hreflang Overview</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="robots" content="noindex,follow" />
+  <style>
+    body{font-family:system-ui,sans-serif;margin:0;padding:24px;background:#0f172a;color:#e2e8f0}
+    h1{margin:0 0 8px}
+    p.meta{color:#94a3b8;margin:0 0 16px}
+    .summary{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+    .pill{background:#1e293b;padding:8px 12px;border-radius:8px;font-size:14px}
+    .pill.ok{background:#166534}
+    .pill.bad{background:#991b1b}
+    table{width:100%;border-collapse:collapse;background:#1e293b;border-radius:8px;overflow:hidden}
+    th,td{padding:8px 10px;text-align:left;border-bottom:1px solid #334155;font-size:14px}
+    th{background:#0b1220;position:sticky;top:0}
+    tr:hover td{background:#273549}
+    a{color:#60a5fa;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .ok{color:#4ade80}
+    .bad{color:#f87171}
+    code{background:#0b1220;padding:2px 6px;border-radius:4px;font-size:12px}
+    input{background:#0b1220;color:#e2e8f0;border:1px solid #334155;padding:6px 10px;border-radius:6px;margin-bottom:12px;width:240px}
+  </style>
+</head>
+<body>
+  <h1>🌐 Sitemap & hreflang Overview</h1>
+  <p class="meta" id="meta">Loading…</p>
+  <input id="filter" placeholder="Filter language or file…" />
+  <div class="summary" id="summary"></div>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th><th>Lang</th><th>Page</th><th>URL</th><th>Sitemap</th>
+        <th>Page reachable</th><th>Sitemap reachable</th><th>hreflang count</th>
+      </tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+
+  <script>
+  (async function () {
+    const res = await fetch('sitemaps/sitemaps.json', {cache:'no-store'});
+    const data = await res.json();
+    document.getElementById('meta').textContent =
+      `Generated ${data.generated} · Base: ${data.base} · ${data.pages.length} languages`;
+
+    const rows = document.getElementById('rows');
+    const checks = await Promise.all(data.pages.map(async (p, i) => {
+      const [pageOk, smapText] = await Promise.all([
+        fetch(p.file, {method:'HEAD'}).then(r => r.ok).catch(() => false),
+        fetch(p.sitemap, {cache:'no-store'}).then(r => r.ok ? r.text() : '').catch(() => '')
+      ]);
+      const hreflangCount = (smapText.match(/hreflang=/g) || []).length;
+      return {...p, idx:i+1, pageOk, smapOk: !!smapText, hreflangCount};
+    }));
+
+    function render(filter='') {
+      const f = filter.toLowerCase();
+      rows.innerHTML = '';
+      checks
+        .filter(c => !f || c.lang.includes(f) || c.file.toLowerCase().includes(f))
+        .forEach(c => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td>${c.idx}</td>
+            <td><code>${c.lang}</code></td>
+            <td><a href="${c.file}">${c.file}</a></td>
+            <td><a href="${c.url}" target="_blank" rel="noopener">${c.url}</a></td>
+            <td><a href="${c.sitemap}" target="_blank">${c.sitemap}</a></td>
+            <td class="${c.pageOk?'ok':'bad'}">${c.pageOk?'✅':'❌'}</td>
+            <td class="${c.smapOk?'ok':'bad'}">${c.smapOk?'✅':'❌'}</td>
+            <td class="${c.hreflangCount>=data.pages.length?'ok':'bad'}">${c.hreflangCount}</td>`;
+          rows.appendChild(tr);
+        });
+    }
+    render();
+    document.getElementById('filter').addEventListener('input', e => render(e.target.value));
+
+    const okPages = checks.filter(c=>c.pageOk).length;
+    const okSmaps = checks.filter(c=>c.smapOk).length;
+    const fullHl  = checks.filter(c=>c.hreflangCount>=data.pages.length).length;
+    document.getElementById('summary').innerHTML = `
+      <span class="pill ${okPages===checks.length?'ok':'bad'}">Pages OK: ${okPages}/${checks.length}</span>
+      <span class="pill ${okSmaps===checks.length?'ok':'bad'}">Sitemaps OK: ${okSmaps}/${checks.length}</span>
+      <span class="pill ${fullHl===checks.length?'ok':'bad'}">Full hreflang matrix: ${fullHl}/${checks.length}</span>
+      <span class="pill"><a href="sitemap.xml">sitemap.xml</a></span>
+      <span class="pill"><a href="sitemap-index.xml">sitemap-index.xml</a></span>`;
+  })();
+  </script>
+</body>
+</html>

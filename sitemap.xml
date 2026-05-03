@@ -1,38 +1,1473 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://et-pioneer.github.io/world/index.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_ar.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_bg.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_bn.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_ca.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_cs.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_da.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_de.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_el.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_es.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_fa.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_fi.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_fr.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_he.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_hi.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_hu.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_hy.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_id.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_it.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_ja.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_ko.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_ms.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_nl.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_no.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_pl.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_pt.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_ro.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_ru.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_sl.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_sv.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_th.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_tr.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_ur.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_vi.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://et-pioneer.github.io/world/united_zh.html</loc><lastmod>2026-05-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://et-pioneer.github.io/world/index.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_ar.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_bg.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_bn.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_ca.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_cs.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_da.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_de.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_el.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_es.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_fa.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_fi.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_fr.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_he.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_hi.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_hu.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_hy.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_id.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_it.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_ja.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_ko.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_ms.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_nl.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_no.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_pl.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_pt.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_ro.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_ru.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_sl.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_sv.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_th.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_tr.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_ur.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_vi.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
+  <url>
+    <loc>https://et-pioneer.github.io/world/united_zh.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://et-pioneer.github.io/world/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://et-pioneer.github.io/world/united_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://et-pioneer.github.io/world/united_bg.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://et-pioneer.github.io/world/united_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://et-pioneer.github.io/world/united_ca.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://et-pioneer.github.io/world/united_cs.html"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://et-pioneer.github.io/world/united_da.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://et-pioneer.github.io/world/united_de.html"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://et-pioneer.github.io/world/united_el.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://et-pioneer.github.io/world/united_es.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://et-pioneer.github.io/world/united_fa.html"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://et-pioneer.github.io/world/united_fi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://et-pioneer.github.io/world/united_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://et-pioneer.github.io/world/united_he.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://et-pioneer.github.io/world/united_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://et-pioneer.github.io/world/united_hu.html"/>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://et-pioneer.github.io/world/united_hy.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://et-pioneer.github.io/world/united_id.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://et-pioneer.github.io/world/united_it.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://et-pioneer.github.io/world/united_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://et-pioneer.github.io/world/united_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://et-pioneer.github.io/world/united_ms.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://et-pioneer.github.io/world/united_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://et-pioneer.github.io/world/united_no.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://et-pioneer.github.io/world/united_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://et-pioneer.github.io/world/united_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://et-pioneer.github.io/world/united_ro.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://et-pioneer.github.io/world/united_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://et-pioneer.github.io/world/united_sl.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://et-pioneer.github.io/world/united_sv.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://et-pioneer.github.io/world/united_th.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://et-pioneer.github.io/world/united_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://et-pioneer.github.io/world/united_ur.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://et-pioneer.github.io/world/united_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://et-pioneer.github.io/world/united_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://et-pioneer.github.io/world/index.html"/>
+  </url>
 </urlset>

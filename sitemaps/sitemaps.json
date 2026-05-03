@@ -1,0 +1,216 @@
+{
+  "generated": "2026-05-03",
+  "base": "https://et-pioneer.github.io/world",
+  "pages": [
+    {
+      "file": "index.html",
+      "lang": "en",
+      "url": "https://et-pioneer.github.io/world/index.html",
+      "sitemap": "sitemaps/sitemap-home.xml"
+    },
+    {
+      "file": "united_ar.html",
+      "lang": "ar",
+      "url": "https://et-pioneer.github.io/world/united_ar.html",
+      "sitemap": "sitemaps/sitemap-united_ar.xml"
+    },
+    {
+      "file": "united_bg.html",
+      "lang": "bg",
+      "url": "https://et-pioneer.github.io/world/united_bg.html",
+      "sitemap": "sitemaps/sitemap-united_bg.xml"
+    },
+    {
+      "file": "united_bn.html",
+      "lang": "bn",
+      "url": "https://et-pioneer.github.io/world/united_bn.html",
+      "sitemap": "sitemaps/sitemap-united_bn.xml"
+    },
+    {
+      "file": "united_ca.html",
+      "lang": "ca",
+      "url": "https://et-pioneer.github.io/world/united_ca.html",
+      "sitemap": "sitemaps/sitemap-united_ca.xml"
+    },
+    {
+      "file": "united_cs.html",
+      "lang": "cs",
+      "url": "https://et-pioneer.github.io/world/united_cs.html",
+      "sitemap": "sitemaps/sitemap-united_cs.xml"
+    },
+    {
+      "file": "united_da.html",
+      "lang": "da",
+      "url": "https://et-pioneer.github.io/world/united_da.html",
+      "sitemap": "sitemaps/sitemap-united_da.xml"
+    },
+    {
+      "file": "united_de.html",
+      "lang": "de",
+      "url": "https://et-pioneer.github.io/world/united_de.html",
+      "sitemap": "sitemaps/sitemap-united_de.xml"
+    },
+    {
+      "file": "united_el.html",
+      "lang": "el",
+      "url": "https://et-pioneer.github.io/world/united_el.html",
+      "sitemap": "sitemaps/sitemap-united_el.xml"
+    },
+    {
+      "file": "united_es.html",
+      "lang": "es",
+      "url": "https://et-pioneer.github.io/world/united_es.html",
+      "sitemap": "sitemaps/sitemap-united_es.xml"
+    },
+    {
+      "file": "united_fa.html",
+      "lang": "fa",
+      "url": "https://et-pioneer.github.io/world/united_fa.html",
+      "sitemap": "sitemaps/sitemap-united_fa.xml"
+    },
+    {
+      "file": "united_fi.html",
+      "lang": "fi",
+      "url": "https://et-pioneer.github.io/world/united_fi.html",
+      "sitemap": "sitemaps/sitemap-united_fi.xml"
+    },
+    {
+      "file": "united_fr.html",
+      "lang": "fr",
+      "url": "https://et-pioneer.github.io/world/united_fr.html",
+      "sitemap": "sitemaps/sitemap-united_fr.xml"
+    },
+    {
+      "file": "united_he.html",
+      "lang": "he",
+      "url": "https://et-pioneer.github.io/world/united_he.html",
+      "sitemap": "sitemaps/sitemap-united_he.xml"
+    },
+    {
+      "file": "united_hi.html",
+      "lang": "hi",
+      "url": "https://et-pioneer.github.io/world/united_hi.html",
+      "sitemap": "sitemaps/sitemap-united_hi.xml"
+    },
+    {
+      "file": "united_hu.html",
+      "lang": "hu",
+      "url": "https://et-pioneer.github.io/world/united_hu.html",
+      "sitemap": "sitemaps/sitemap-united_hu.xml"
+    },
+    {
+      "file": "united_hy.html",
+      "lang": "hy",
+      "url": "https://et-pioneer.github.io/world/united_hy.html",
+      "sitemap": "sitemaps/sitemap-united_hy.xml"
+    },
+    {
+      "file": "united_id.html",
+      "lang": "id",
+      "url": "https://et-pioneer.github.io/world/united_id.html",
+      "sitemap": "sitemaps/sitemap-united_id.xml"
+    },
+    {
+      "file": "united_it.html",
+      "lang": "it",
+      "url": "https://et-pioneer.github.io/world/united_it.html",
+      "sitemap": "sitemaps/sitemap-united_it.xml"
+    },
+    {
+      "file": "united_ja.html",
+      "lang": "ja",
+      "url": "https://et-pioneer.github.io/world/united_ja.html",
+      "sitemap": "sitemaps/sitemap-united_ja.xml"
+    },
+    {
+      "file": "united_ko.html",
+      "lang": "ko",
+      "url": "https://et-pioneer.github.io/world/united_ko.html",
+      "sitemap": "sitemaps/sitemap-united_ko.xml"
+    },
+    {
+      "file": "united_ms.html",
+      "lang": "ms",
+      "url": "https://et-pioneer.github.io/world/united_ms.html",
+      "sitemap": "sitemaps/sitemap-united_ms.xml"
+    },
+    {
+      "file": "united_nl.html",
+      "lang": "nl",
+      "url": "https://et-pioneer.github.io/world/united_nl.html",
+      "sitemap": "sitemaps/sitemap-united_nl.xml"
+    },
+    {
+      "file": "united_no.html",
+      "lang": "no",
+      "url": "https://et-pioneer.github.io/world/united_no.html",
+      "sitemap": "sitemaps/sitemap-united_no.xml"
+    },
+    {
+      "file": "united_pl.html",
+      "lang": "pl",
+      "url": "https://et-pioneer.github.io/world/united_pl.html",
+      "sitemap": "sitemaps/sitemap-united_pl.xml"
+    },
+    {
+      "file": "united_pt.html",
+      "lang": "pt",
+      "url": "https://et-pioneer.github.io/world/united_pt.html",
+      "sitemap": "sitemaps/sitemap-united_pt.xml"
+    },
+    {
+      "file": "united_ro.html",
+      "lang": "ro",
+      "url": "https://et-pioneer.github.io/world/united_ro.html",
+      "sitemap": "sitemaps/sitemap-united_ro.xml"
+    },
+    {
+      "file": "united_ru.html",
+      "lang": "ru",
+      "url": "https://et-pioneer.github.io/world/united_ru.html",
+      "sitemap": "sitemaps/sitemap-united_ru.xml"
+    },
+    {
+      "file": "united_sl.html",
+      "lang": "sl",
+      "url": "https://et-pioneer.github.io/world/united_sl.html",
+      "sitemap": "sitemaps/sitemap-united_sl.xml"
+    },
+    {
+      "file": "united_sv.html",
+      "lang": "sv",
+      "url": "https://et-pioneer.github.io/world/united_sv.html",
+      "sitemap": "sitemaps/sitemap-united_sv.xml"
+    },
+    {
+      "file": "united_th.html",
+      "lang": "th",
+      "url": "https://et-pioneer.github.io/world/united_th.html",
+      "sitemap": "sitemaps/sitemap-united_th.xml"
+    },
+    {
+      "file": "united_tr.html",
+      "lang": "tr",
+      "url": "https://et-pioneer.github.io/world/united_tr.html",
+      "sitemap": "sitemaps/sitemap-united_tr.xml"
+    },
+    {
+      "file": "united_ur.html",
+      "lang": "ur",
+      "url": "https://et-pioneer.github.io/world/united_ur.html",
+      "sitemap": "sitemaps/sitemap-united_ur.xml"
+    },
+    {
+      "file": "united_vi.html",
+      "lang": "vi",
+      "url": "https://et-pioneer.github.io/world/united_vi.html",
+      "sitemap": "sitemaps/sitemap-united_vi.xml"
+    },
+    {
+      "file": "united_zh.html",
+      "lang": "zh",
+      "url": "https://et-pioneer.github.io/world/united_zh.html",
+      "sitemap": "sitemaps/sitemap-united_zh.xml"
+    }
+  ]
+}
