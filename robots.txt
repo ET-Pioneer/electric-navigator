@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://et-pioneer.github.io/world/sitemap.xml
-Sitemap: https://et-pioneer.github.io/world/sitemap-index.xml
+Sitemap: https://et-pioneer.github.io/electric-navigator/sitemap.xml
+Sitemap: https://et-pioneer.github.io/electric-navigator/sitemap-index.xml
