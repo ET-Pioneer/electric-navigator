@@ -37,7 +37,7 @@
     <thead>
       <tr>
         <th>#</th><th>Lang</th><th>Page</th><th>URL</th><th>Sitemap</th>
-        <th>Page status</th><th>Sitemap status</th><th>hreflang</th><th>Missing languages</th>
+        <th>Page status</th><th>Sitemap status</th><th>hreflang</th><th>Full hreflang matrix</th><th>Missing languages</th>
       </tr>
     </thead>
     <tbody id="rows"></tbody>
@@ -80,7 +80,8 @@
       const missing = [...expectedLangs].filter(l => !found.has(l));
 
       return {...p, idx:i+1, pageStatus, pageError,
-              smapStatus, smapError, hreflangCount: hreflangs.length, missing};
+              smapStatus, smapError, hreflangCount: hreflangs.length,
+              hreflangs: [...new Set(hreflangs)].sort(), missing};
     }));
 
     function render(filter='') {
@@ -103,6 +104,7 @@
             <td class="${smapOk?'ok':'bad'}" title="${c.smapError||''}">
               ${smapOk?'✅ '+c.smapStatus:'❌ '+(c.smapError||c.smapStatus||'fail')}</td>
             <td class="${fullHl?'ok':'bad'}">${c.hreflangCount}</td>
+            <td>${c.hreflangs.length ? c.hreflangs.map(l=>`<code>${l}</code>`).join(' ') : '—'}</td>
             <td class="${c.missing.length?'bad':'ok'}">
               ${c.missing.length ? c.missing.map(l=>`<code>${l}</code>`).join(' ') : '—'}</td>`;
           rows.appendChild(tr);
