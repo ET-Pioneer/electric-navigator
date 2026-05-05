@@ -1,10 +1,170 @@
 {
-  "generated": "2026-05-05T14:58:45.807Z",
+  "generated": "2026-05-05T14:59:18.817Z",
   "languages": {
     "en": {
-      "count": 12,
+      "count": 94,
       "file": "data/search_en.json",
       "page": "index_en.html"
+    },
+    "ar": {
+      "count": 18,
+      "file": "data/search_ar.json",
+      "page": "index_ar.html"
+    },
+    "bg": {
+      "count": 18,
+      "file": "data/search_bg.json",
+      "page": "index_bg.html"
+    },
+    "bn": {
+      "count": 18,
+      "file": "data/search_bn.json",
+      "page": "index_bn.html"
+    },
+    "ca": {
+      "count": 18,
+      "file": "data/search_ca.json",
+      "page": "index_ca.html"
+    },
+    "cs": {
+      "count": 18,
+      "file": "data/search_cs.json",
+      "page": "index_cs.html"
+    },
+    "da": {
+      "count": 18,
+      "file": "data/search_da.json",
+      "page": "index_da.html"
+    },
+    "de": {
+      "count": 9,
+      "file": "data/search_de.json",
+      "page": "index_de.html"
+    },
+    "el": {
+      "count": 18,
+      "file": "data/search_el.json",
+      "page": "index_el.html"
+    },
+    "es": {
+      "count": 18,
+      "file": "data/search_es.json",
+      "page": "index_es.html"
+    },
+    "fa": {
+      "count": 18,
+      "file": "data/search_fa.json",
+      "page": "index_fa.html"
+    },
+    "fi": {
+      "count": 18,
+      "file": "data/search_fi.json",
+      "page": "index_fi.html"
+    },
+    "fr": {
+      "count": 14,
+      "file": "data/search_fr.json",
+      "page": "index_fr.html"
+    },
+    "he": {
+      "count": 18,
+      "file": "data/search_he.json",
+      "page": "index_he.html"
+    },
+    "hu": {
+      "count": 18,
+      "file": "data/search_hu.json",
+      "page": "index_hu.html"
+    },
+    "hy": {
+      "count": 18,
+      "file": "data/search_hy.json",
+      "page": "index_hy.html"
+    },
+    "id": {
+      "count": 18,
+      "file": "data/search_id.json",
+      "page": "index_id.html"
+    },
+    "it": {
+      "count": 18,
+      "file": "data/search_it.json",
+      "page": "index_it.html"
+    },
+    "ja": {
+      "count": 18,
+      "file": "data/search_ja.json",
+      "page": "index_ja.html"
+    },
+    "ko": {
+      "count": 18,
+      "file": "data/search_ko.json",
+      "page": "index_ko.html"
+    },
+    "ms": {
+      "count": 18,
+      "file": "data/search_ms.json",
+      "page": "index_ms.html"
+    },
+    "nl": {
+      "count": 18,
+      "file": "data/search_nl.json",
+      "page": "index_nl.html"
+    },
+    "no": {
+      "count": 18,
+      "file": "data/search_no.json",
+      "page": "index_no.html"
+    },
+    "pl": {
+      "count": 18,
+      "file": "data/search_pl.json",
+      "page": "index_pl.html"
+    },
+    "pt": {
+      "count": 18,
+      "file": "data/search_pt.json",
+      "page": "index_pt.html"
+    },
+    "ro": {
+      "count": 18,
+      "file": "data/search_ro.json",
+      "page": "index_ro.html"
+    },
+    "ru": {
+      "count": 18,
+      "file": "data/search_ru.json",
+      "page": "index_ru.html"
+    },
+    "sv": {
+      "count": 18,
+      "file": "data/search_sv.json",
+      "page": "index_sv.html"
+    },
+    "th": {
+      "count": 18,
+      "file": "data/search_th.json",
+      "page": "index_th.html"
+    },
+    "tr": {
+      "count": 18,
+      "file": "data/search_tr.json",
+      "page": "index_tr.html"
+    },
+    "ur": {
+      "count": 18,
+      "file": "data/search_ur.json",
+      "page": "index_ur.html"
+    },
+    "vi": {
+      "count": 18,
+      "file": "data/search_vi.json",
+      "page": "index_vi.html"
+    },
+    "zh": {
+      "count": 18,
+      "file": "data/search_zh.json",
+      "page": "index_zh.html"
     }
   }
 }
