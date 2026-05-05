@@ -10,7 +10,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "enforce:canonical": "node scripts/enforce-canonical.mjs .",
+    "build:pdf-index": "node scripts/build-pdf-index.mjs",
+    "prebuild": "node scripts/enforce-canonical.mjs ."
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
