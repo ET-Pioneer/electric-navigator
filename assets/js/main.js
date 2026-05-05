@@ -307,6 +307,7 @@
 
     var main = document.getElementById("main") || document.body;
     var text = getVisibleText(main);
+    var textLc = text.toLowerCase();
 
     var leaks = [];
     Object.keys(MARKERS).forEach(function(lng){
@@ -314,17 +315,21 @@
       var arr = MARKERS[lng] || [];
       arr.forEach(function(m){
         if (!m || m.length < 4) return; // skip too-short tokens to reduce false positives
-        // Word-boundary-ish check: surround with spaces to avoid in-link substring hits
-        if (text.indexOf(m) !== -1){
-          // Skip if the matched marker is also a substring of an expected marker
-          var isShared = (MARKERS[expected]||[]).some(function(em){ return em.indexOf(m) !== -1; });
+        var mLc = m.toLowerCase();
+        if (textLc.indexOf(mLc) !== -1){
+          // Skip if the matched marker is also a substring of any expected marker (case-insensitive)
+          var isShared = (MARKERS[expected]||[]).some(function(em){
+            return em.toLowerCase().indexOf(mLc) !== -1;
+          });
           if (isShared) return;
           leaks.push("Found '" + lng.toUpperCase() + "' text on " + expected.toUpperCase() + " page: \"" + m + "\"");
         }
       });
     });
 
-    var hasOwn = (MARKERS[expected]||[]).some(function(m){ return text.indexOf(m) !== -1; });
+    var hasOwn = (MARKERS[expected]||[]).some(function(m){
+      return textLc.indexOf(m.toLowerCase()) !== -1;
+    });
     if (!hasOwn) leaks.push("Expected " + expected.toUpperCase() + " marker text not found on " + file);
 
     if (leaks.length === 0){
