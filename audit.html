@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>End-to-End Audit — hreflang & canonical</title>
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="https://et-pioneer.github.io/electric-navigator/audit.html"/>
+<link rel="stylesheet" href="./assets/css/style.css"/>
+<style>
+  .wrap{max-width:1200px;margin:0 auto;padding:1.5rem 1rem}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border);border-radius:6px;overflow:hidden}
+  th,td{padding:.5rem .65rem;border-bottom:1px solid var(--border);font-size:13px;text-align:left;vertical-align:top}
+  th{background:var(--nato-blue);color:#fff;position:sticky;top:0}
+  td code{background:#eef2f8;padding:1px 5px;border-radius:3px;font-size:12px}
+  .ok{color:#0a6b1f;font-weight:700}
+  .bad{color:#a31d1d;font-weight:700}
+  .toolbar{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0}
+  .btn{cursor:pointer}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="./index.html"><span class="brand-mark">⚡</span><span class="brand-text"><span class="brand-title">Electric Technocracy</span><span class="brand-tag">Audit · hreflang & canonical</span></span></a>
+</div></header>
+<main class="wrap" id="main">
+  <h1>🛡️ End-to-End Audit</h1>
+  <p id="meta">Running…</p>
+  <div class="toolbar">
+    <button class="btn" id="dl-json">⬇ Download audit-report.json</button>
+    <a class="btn" href="./sitemaps.html">↗ Sitemap & hreflang overview</a>
+    <a class="btn" href="./search.html">↗ PDF Search</a>
+  </div>
+  <table>
+    <thead><tr>
+      <th>#</th><th>Lang</th><th>Page</th><th>Canonical</th><th>Canonical OK</th>
+      <th>hreflang count</th><th>Self hreflang</th><th>x-default</th><th>Sitemap</th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+</main>
+<script>
+(async function(){
+  const BASE = "https://et-pioneer.github.io/electric-navigator/";
+  const manifest = await (await fetch("sitemaps/sitemaps.json",{cache:"no-store"})).json();
+  const pages = manifest.pages;
+  const rows = document.getElementById("rows");
+  const report = { generated:new Date().toISOString(), base:BASE, total:pages.length, pages:[] };
+
+  for (let i=0;i<pages.length;i++){
+    const p = pages[i];
+    let html = "", err = "";
+    try { const r = await fetch(p.file,{cache:"no-store"}); html = r.ok ? await r.text() : ""; if(!r.ok) err = "HTTP "+r.status; }
+    catch(e){ err = e.message; }
+    const expected = BASE + (p.file === "index.html" ? "" : p.file);
+    const canon = (html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)/i)||[])[1] || "";
+    const hreflangs = [...html.matchAll(/hreflang=["']([^"']+)["']/gi)].map(m=>m[1]);
+    const selfHl = hreflangs.includes(p.lang);
+    const xDef = hreflangs.includes("x-default");
+    const canonOk = canon === expected || (p.file==="index.html" && canon === BASE);
+    let smapOk = false;
+    try { const r = await fetch(p.sitemap,{method:"HEAD",cache:"no-store"}); smapOk = r.ok; } catch(e){}
+
+    const rec = { lang:p.lang, file:p.file, expected, canonical:canon, canonical_ok:canonOk,
+                  hreflang_count:hreflangs.length, self_hreflang:selfHl, x_default:xDef,
+                  sitemap:p.sitemap, sitemap_ok:smapOk, error:err };
+    report.pages.push(rec);
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${i+1}</td><td><code>${p.lang}</code></td>
+      <td><a href="${p.file}">${p.file}</a></td>
+      <td><code style="font-size:11px">${canon||"—"}</code></td>
+      <td class="${canonOk?"ok":"bad"}">${canonOk?"✅":"❌"}</td>
+      <td class="${hreflangs.length>=35?"ok":"bad"}">${hreflangs.length}</td>
+      <td class="${selfHl?"ok":"bad"}">${selfHl?"✅":"❌"}</td>
+      <td class="${xDef?"ok":"bad"}">${xDef?"✅":"❌"}</td>
+      <td class="${smapOk?"ok":"bad"}">${smapOk?"✅":"❌"}</td>`;
+    rows.appendChild(tr);
+  }
+  const okCount = report.pages.filter(p=>p.canonical_ok && p.self_hreflang && p.x_default && p.sitemap_ok).length;
+  document.getElementById("meta").textContent =
+    `Generated ${report.generated} · ${okCount}/${report.total} pages fully OK`;
+
+  document.getElementById("dl-json").addEventListener("click", ()=>{
+    const blob = new Blob([JSON.stringify(report,null,2)],{type:"application/json"});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "audit-report.json";
+    a.click();
+  });
+  window.__auditReport = report;
+})();
+</script>
+</body></html>
