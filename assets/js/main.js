@@ -361,20 +361,29 @@
     var textLc = text.toLowerCase();
 
     var leaks = [];
+    var matchMarker = window.__etcnMatchMarker = function(haystackLc, marker){
+      if (!marker || marker.length < 4) return false;
+      var mLc = marker.toLowerCase();
+      // Word-boundary match for any marker containing latin word chars; substring for non-latin scripts.
+      if (/[a-z0-9]/i.test(marker)){
+        var esc = mLc.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+        var re = new RegExp("(^|[^\\p{L}\\p{N}])"+esc+"($|[^\\p{L}\\p{N}])","u");
+        return re.test(haystackLc);
+      }
+      return haystackLc.indexOf(mLc) !== -1;
+    };
     Object.keys(MARKERS).forEach(function(lng){
       if (lng === expected) return;
       var arr = MARKERS[lng] || [];
       arr.forEach(function(m){
-        if (!m || m.length < 4) return; // skip too-short tokens to reduce false positives
+        if (!matchMarker(textLc, m)) return;
+        // Skip if the matched marker is also a substring of any expected marker (case-insensitive)
         var mLc = m.toLowerCase();
-        if (textLc.indexOf(mLc) !== -1){
-          // Skip if the matched marker is also a substring of any expected marker (case-insensitive)
-          var isShared = (MARKERS[expected]||[]).some(function(em){
-            return em.toLowerCase().indexOf(mLc) !== -1;
-          });
-          if (isShared) return;
-          leaks.push("Found '" + lng.toUpperCase() + "' text on " + expected.toUpperCase() + " page: \"" + m + "\"");
-        }
+        var isShared = (MARKERS[expected]||[]).some(function(em){
+          return em.toLowerCase().indexOf(mLc) !== -1;
+        });
+        if (isShared) return;
+        leaks.push("Found '" + lng.toUpperCase() + "' text on " + expected.toUpperCase() + " page: \"" + m + "\"");
       });
     });
 
