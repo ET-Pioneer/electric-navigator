@@ -68,9 +68,10 @@ function langFromUrl(u){
 }
 
 async function extract(buf){
-  const pdfParse = require("pdf-parse");
+  const { PDFParse } = require("pdf-parse");
   try {
-    const r = await pdfParse(buf, { max: 0 });
+    const p = new PDFParse({ data: buf });
+    const r = await p.getText();
     return (r.text || "").replace(/\s+/g, " ").trim();
   } catch(e){ return ""; }
 }
