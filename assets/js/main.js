@@ -82,18 +82,69 @@
   // ─── Mobile nav toggle ───
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("primary-nav");
+  var scrim = null;
   if (toggle && nav){
-    toggle.addEventListener("click", function(){
-      var open = nav.classList.toggle("open");
+    scrim = document.createElement("div");
+    scrim.className = "nav-scrim";
+    document.body.appendChild(scrim);
+    function setNav(open){
+      nav.classList.toggle("open", open);
+      scrim.classList.toggle("open", open);
+      document.body.classList.toggle("nav-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    });
+    }
+    toggle.addEventListener("click", function(){ setNav(!nav.classList.contains("open")); });
+    scrim.addEventListener("click", function(){ setNav(false); });
     nav.addEventListener("click", function(e){
-      if (e.target.tagName === "A" && window.matchMedia("(max-width: 859px)").matches){
-        nav.classList.remove("open");
-        toggle.setAttribute("aria-expanded","false");
-      }
+      if (e.target.tagName === "A") setNav(false);
+    });
+    document.addEventListener("keydown", function(e){
+      if (e.key === "Escape" && nav.classList.contains("open")) setNav(false);
     });
   }
+
+  // ─── Header hide-on-scroll-down / show-on-scroll-up ───
+  (function scrollHeader(){
+    var header = document.querySelector(".site-header");
+    if (!header) return;
+    var lastY = window.scrollY || 0, ticking = false, threshold = 80;
+    function update(){
+      var y = window.scrollY || 0;
+      header.classList.toggle("is-scrolled", y > 4);
+      // Don't hide while drawer is open
+      if (document.body.classList.contains("nav-open")){ lastY = y; ticking = false; return; }
+      if (y > lastY && y > threshold) header.classList.add("is-hidden");
+      else if (y < lastY) header.classList.remove("is-hidden");
+      lastY = y; ticking = false;
+    }
+    window.addEventListener("scroll", function(){
+      if (!ticking){ window.requestAnimationFrame(update); ticking = true; }
+    }, {passive:true});
+  })();
+
+  // ─── Back-to-top button ───
+  (function backToTop(){
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "back-to-top";
+    btn.setAttribute("aria-label","Back to top");
+    btn.innerHTML = "↑";
+    document.body.appendChild(btn);
+    btn.addEventListener("click", function(){
+      window.scrollTo({top:0, behavior:"smooth"});
+      var skip = document.querySelector(".skip-link");
+      if (skip && typeof skip.focus === "function") setTimeout(function(){ skip.focus(); }, 400);
+    });
+    var ticking = false;
+    function update(){
+      btn.classList.toggle("visible", (window.scrollY||0) > 320);
+      ticking = false;
+    }
+    window.addEventListener("scroll", function(){
+      if (!ticking){ window.requestAnimationFrame(update); ticking = true; }
+    }, {passive:true});
+    update();
+  })();
 
   // ─── Active nav highlight ───
   function setActiveHash(){
@@ -310,20 +361,29 @@
     var textLc = text.toLowerCase();
 
     var leaks = [];
+    var matchMarker = window.__etcnMatchMarker = function(haystackLc, marker){
+      if (!marker || marker.length < 4) return false;
+      var mLc = marker.toLowerCase();
+      // Word-boundary match for any marker containing latin word chars; substring for non-latin scripts.
+      if (/[a-z0-9]/i.test(marker)){
+        var esc = mLc.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+        var re = new RegExp("(^|[^\\p{L}\\p{N}])"+esc+"($|[^\\p{L}\\p{N}])","u");
+        return re.test(haystackLc);
+      }
+      return haystackLc.indexOf(mLc) !== -1;
+    };
     Object.keys(MARKERS).forEach(function(lng){
       if (lng === expected) return;
       var arr = MARKERS[lng] || [];
       arr.forEach(function(m){
-        if (!m || m.length < 4) return; // skip too-short tokens to reduce false positives
+        if (!matchMarker(textLc, m)) return;
+        // Skip if the matched marker is also a substring of any expected marker (case-insensitive)
         var mLc = m.toLowerCase();
-        if (textLc.indexOf(mLc) !== -1){
-          // Skip if the matched marker is also a substring of any expected marker (case-insensitive)
-          var isShared = (MARKERS[expected]||[]).some(function(em){
-            return em.toLowerCase().indexOf(mLc) !== -1;
-          });
-          if (isShared) return;
-          leaks.push("Found '" + lng.toUpperCase() + "' text on " + expected.toUpperCase() + " page: \"" + m + "\"");
-        }
+        var isShared = (MARKERS[expected]||[]).some(function(em){
+          return em.toLowerCase().indexOf(mLc) !== -1;
+        });
+        if (isShared) return;
+        leaks.push("Found '" + lng.toUpperCase() + "' text on " + expected.toUpperCase() + " page: \"" + m + "\"");
       });
     });
 

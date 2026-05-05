@@ -1,0 +1,64 @@
+name: Build & verify sitemaps on GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+
+      - name: Install vitest deps
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+
+      - name: Run validator tests
+        run: npx vitest run
+
+      - name: Enforce canonical URLs
+        run: node scripts/enforce-canonical.mjs .
+
+      - name: Verify sitemap.xml is reachable on Pages
+        env:
+          BASE: https://et-pioneer.github.io/electric-navigator
+        run: |
+          set -e
+          fail=0
+          echo "Checking $BASE/sitemap.xml"
+          code=$(curl -sS -o /tmp/sm.xml -w "%{http_code}" "$BASE/sitemap.xml" || echo 000)
+          if [ "$code" != "200" ]; then echo "❌ sitemap.xml HTTP $code"; fail=1; else echo "✅ sitemap.xml 200"; fi
+
+          # Extract every <loc> and HEAD-check
+          grep -oE 'https?://[^<]+' /tmp/sm.xml | sort -u > /tmp/locs.txt
+          total=$(wc -l < /tmp/locs.txt)
+          echo "Verifying $total URLs from sitemap.xml…"
+          while read -r u; do
+            c=$(curl -sS -o /dev/null -w "%{http_code}" -L "$u" || echo 000)
+            if [ "$c" != "200" ]; then echo "  ❌ $c $u"; fail=1; else echo "  ✅ $u"; fi
+          done < /tmp/locs.txt
+
+          # Per-language sitemap files
+          for f in sitemaps/sitemap-*.xml; do
+            name=$(basename "$f")
+            c=$(curl -sS -o /dev/null -w "%{http_code}" -L "$BASE/sitemaps/$name" || echo 000)
+            if [ "$c" != "200" ]; then echo "❌ $c sitemaps/$name"; fail=1; else echo "✅ sitemaps/$name"; fi
+          done
+
+          exit $fail
+
+      - name: Upload audit log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitemap-verify-log
+          path: /tmp/locs.txt
+          if-no-files-found: ignore

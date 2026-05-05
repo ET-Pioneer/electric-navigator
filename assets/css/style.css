@@ -68,7 +68,11 @@ a:hover{color:var(--nato-accent)}
   border-bottom:3px solid var(--nato-gold);
   position:sticky;top:0;z-index:50;
   box-shadow:var(--shadow);
+  transition:transform .35s ease, box-shadow .25s ease;
+  will-change:transform;
 }
+.site-header.is-hidden{transform:translateY(-100%)}
+.site-header.is-scrolled{box-shadow:0 6px 18px rgba(10,34,64,.25)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 1rem;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:.6rem;color:#fff;text-decoration:none}
 .brand-mark{
@@ -80,27 +84,60 @@ a:hover{color:var(--nato-accent)}
 .brand-title{font-weight:700;font-size:1rem;letter-spacing:.02em}
 .brand-tag{font-size:.72rem;opacity:.85;text-transform:uppercase;letter-spacing:.08em}
 
+/* Hamburger toggle — always visible (mobile + desktop) */
 .nav-toggle{
   background:transparent;border:1px solid rgba(255,255,255,.4);
-  width:42px;height:38px;border-radius:4px;display:inline-flex;
-  flex-direction:column;justify-content:center;align-items:center;gap:4px;cursor:pointer;
+  width:44px;height:40px;border-radius:6px;display:inline-flex;
+  flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer;
+  transition:background .15s, border-color .15s;
 }
-.nav-toggle span{display:block;width:20px;height:2px;background:#fff}
+.nav-toggle:hover,.nav-toggle:focus-visible{background:rgba(255,255,255,.12);border-color:var(--nato-gold)}
+.nav-toggle span{display:block;width:22px;height:2px;background:#fff;transition:transform .25s, opacity .25s}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-.primary-nav{display:none;width:100%}
-.primary-nav.open{display:block}
-.primary-nav ul{list-style:none;margin:.5rem 0 0;padding:0;display:flex;flex-direction:column;gap:.25rem}
+/* Drawer-style nav, identical on mobile and desktop */
+.primary-nav{
+  display:block;position:fixed;top:0;right:0;height:100vh;width:min(320px,86vw);
+  background:linear-gradient(180deg,var(--nato-blue),var(--nato-blue-2));
+  color:#fff;padding:5rem 1.25rem 2rem;overflow-y:auto;z-index:60;
+  transform:translateX(100%);transition:transform .3s ease;box-shadow:-6px 0 24px rgba(0,0,0,.35);
+}
+[dir="rtl"] .primary-nav{right:auto;left:0;transform:translateX(-100%);box-shadow:6px 0 24px rgba(0,0,0,.35)}
+.primary-nav.open{transform:translateX(0)}
+.primary-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.25rem}
 .primary-nav a{
-  display:block;color:#fff;text-decoration:none;padding:.6rem .75rem;
-  border-radius:4px;font-family:Arial,Helvetica,sans-serif;font-size:.95rem;
+  display:block;color:#fff;text-decoration:none;padding:.7rem .75rem;
+  border-radius:6px;font-family:Arial,Helvetica,sans-serif;font-size:1rem;
 }
-.primary-nav a:hover,.primary-nav a:focus{background:rgba(255,255,255,.1);color:#fff}
+.primary-nav a:hover,.primary-nav a:focus,.primary-nav a.is-active{background:rgba(255,255,255,.12);color:#fff}
+.primary-nav .lang-switcher{margin-top:1rem;display:flex;width:100%}
+.primary-nav .lang-select{max-width:100%;width:100%}
 
-@media(min-width:860px){
-  .nav-toggle{display:none}
-  .primary-nav{display:block;width:auto}
-  .primary-nav ul{flex-direction:row;flex-wrap:wrap;gap:.25rem}
+/* Scrim behind drawer */
+.nav-scrim{
+  position:fixed;inset:0;background:rgba(8,18,34,.55);opacity:0;pointer-events:none;
+  transition:opacity .25s;z-index:55;
 }
+.nav-scrim.open{opacity:1;pointer-events:auto}
+
+/* Back-to-top button */
+.back-to-top{
+  position:fixed;right:18px;bottom:18px;z-index:45;
+  width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--nato-blue);color:#fff;font-size:1.25rem;font-weight:700;
+  box-shadow:0 4px 14px rgba(10,34,64,.35);
+  display:grid;place-items:center;
+  opacity:0;transform:translateY(12px);pointer-events:none;
+  transition:opacity .25s, transform .25s, background .15s;
+}
+.back-to-top.visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.back-to-top:hover,.back-to-top:focus-visible{background:var(--nato-accent)}
+[dir="rtl"] .back-to-top{right:auto;left:18px}
+
+/* Body lock when drawer open */
+body.nav-open{overflow:hidden}
 
 /* Hero */
 .hero{

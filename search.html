@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>PDF Search — Electric Technocracy</title>
+<meta name="description" content="Search the full-text PDF archive of the Electric Technocracy Community across 35 languages."/>
+<link rel="canonical" href="https://et-pioneer.github.io/electric-navigator/search.html"/>
+<link rel="stylesheet" href="./assets/css/style.css"/>
+<style>
+  .search-shell{padding:1.5rem 1rem;max-width:980px;margin:0 auto}
+  .search-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+  .search-controls input,.search-controls select{padding:.55rem .75rem;border:1px solid var(--border);border-radius:6px;font-size:1rem;background:#fff;color:var(--text)}
+  .search-controls input{flex:1;min-width:240px}
+  .hit{background:#fff;border:1px solid var(--border);border-left:3px solid var(--nato-gold);
+       padding:1rem;border-radius:6px;margin:.6rem 0;box-shadow:var(--shadow)}
+  .hit h3{margin:0 0 .25rem;font-size:1rem;color:var(--nato-blue)}
+  .hit .snippet{font-size:.92rem;color:var(--muted);margin:.25rem 0 0}
+  .hit mark{background:var(--nato-gold);color:var(--nato-blue);padding:0 2px;border-radius:2px}
+  .stats{color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="./index.html"><span class="brand-mark">⚡</span><span class="brand-text"><span class="brand-title">Electric Technocracy</span><span class="brand-tag">PDF Search</span></span></a>
+</div></header>
+<main class="search-shell" id="main">
+  <h1>🔍 PDF Content Search</h1>
+  <p class="stats" id="status">Loading index…</p>
+  <div class="search-controls">
+    <input id="q" type="search" placeholder="Search the archive…" autofocus />
+    <select id="lang"><option value="">All languages</option></select>
+  </div>
+  <div id="results"></div>
+  <p style="margin-top:2rem"><a href="./index.html">← Home</a> · <a href="./sitemaps.html">Sitemap overview</a> · <a href="./audit.html">Audit report</a></p>
+</main>
+<script>
+(async function(){
+  const status = document.getElementById("status");
+  const params = new URLSearchParams(location.search);
+  let manifest;
+  try {
+    manifest = await (await fetch("data/search-index.json", {cache:"no-store"})).json();
+  } catch(e){ status.textContent = "Index not built yet. Run: node scripts/build-pdf-index.mjs"; return; }
+
+  const langs = Object.keys(manifest.languages).sort();
+  const langSel = document.getElementById("lang");
+  langs.forEach(l => {
+    const o = document.createElement("option");
+    o.value = l; o.textContent = `${l.toUpperCase()} (${manifest.languages[l].count})`;
+    langSel.appendChild(o);
+  });
+  if (params.get("lang")) langSel.value = params.get("lang");
+
+  const cache = {};
+  async function load(lang){
+    if (cache[lang]) return cache[lang];
+    const j = await (await fetch(manifest.languages[lang].file, {cache:"no-store"})).json();
+    return cache[lang] = j.docs.map(d => ({...d, lang}));
+  }
+
+  const q = document.getElementById("q");
+  const results = document.getElementById("results");
+  let timer;
+  async function run(){
+    const term = q.value.trim();
+    const langs2 = langSel.value ? [langSel.value] : langs;
+    if (!term){ results.innerHTML=""; status.textContent = `Ready · ${Object.values(manifest.languages).reduce((a,l)=>a+l.count,0)} PDFs across ${langs.length} languages.`; return; }
+    status.textContent = "Searching…";
+    const re = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),"gi");
+    const docsBatches = await Promise.all(langs2.map(load));
+    const hits = [];
+    docsBatches.flat().forEach(d => {
+      const hay = d.fullText || d.excerpt || "";
+      const idx = hay.toLowerCase().indexOf(term.toLowerCase());
+      if (idx === -1) return;
+      const start = Math.max(0, idx-80), end = Math.min(hay.length, idx+term.length+200);
+      const snip = (start>0?"…":"") + hay.slice(start,end).replace(re, m=>`<mark>${m}</mark>`) + (end<hay.length?"…":"");
+      hits.push({...d, snippet:snip});
+    });
+    hits.sort((a,b)=>a.name.localeCompare(b.name));
+    status.textContent = `${hits.length} match${hits.length===1?"":"es"} for "${term}"`;
+    results.innerHTML = hits.slice(0,200).map(h => `
+      <div class="hit">
+        <h3><a href="${h.url}" rel="noopener" target="_blank">${h.name}</a> <small style="color:#888">[${h.lang.toUpperCase()}]</small></h3>
+        <div class="snippet">${h.snippet}</div>
+      </div>`).join("");
+  }
+  q.addEventListener("input", ()=>{ clearTimeout(timer); timer = setTimeout(run, 220); });
+  langSel.addEventListener("change", run);
+  if (params.get("q")){ q.value = params.get("q"); run(); } else run();
+})();
+</script>
+</body></html>
