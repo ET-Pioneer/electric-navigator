@@ -2,7 +2,7 @@
   "generated": "2026-05-06T01:23:14.469Z",
   "languages": {
     "ar": {
-      "count": 18,
+      "count": 15,
       "file": "data/search_ar.json",
       "page": "index_ar.html"
     },
@@ -17,7 +17,7 @@
       "page": "index_bn.html"
     },
     "ca": {
-      "count": 18,
+      "count": 17,
       "file": "data/search_ca.json",
       "page": "index_ca.html"
     },
@@ -37,7 +37,7 @@
       "page": "index_de.html"
     },
     "el": {
-      "count": 18,
+      "count": 17,
       "file": "data/search_el.json",
       "page": "index_el.html"
     },
@@ -52,7 +52,7 @@
       "page": "index_es.html"
     },
     "fa": {
-      "count": 18,
+      "count": 17,
       "file": "data/search_fa.json",
       "page": "index_fa.html"
     },
@@ -62,12 +62,12 @@
       "page": "index_fi.html"
     },
     "fr": {
-      "count": 14,
+      "count": 9,
       "file": "data/search_fr.json",
       "page": "index_fr.html"
     },
     "he": {
-      "count": 18,
+      "count": 17,
       "file": "data/search_he.json",
       "page": "index_he.html"
     },
@@ -87,7 +87,7 @@
       "page": "index_id.html"
     },
     "it": {
-      "count": 18,
+      "count": 17,
       "file": "data/search_it.json",
       "page": "index_it.html"
     },
@@ -132,7 +132,7 @@
       "page": "index_ro.html"
     },
     "ru": {
-      "count": 18,
+      "count": 17,
       "file": "data/search_ru.json",
       "page": "index_ru.html"
     },
@@ -152,7 +152,7 @@
       "page": "index_tr.html"
     },
     "ur": {
-      "count": 18,
+      "count": 17,
       "file": "data/search_ur.json",
       "page": "index_ur.html"
     },
