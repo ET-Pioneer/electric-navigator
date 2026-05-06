@@ -239,7 +239,17 @@
       "error": "all candidates failed"
     }
   ],
-  "deadRemoved": {},
+  "deadRemoved": {
+    "ar": 3,
+    "ca": 1,
+    "el": 1,
+    "fa": 1,
+    "fr": 5,
+    "he": 1,
+    "it": 1,
+    "ru": 1,
+    "ur": 1
+  },
   "summary": {
     "recovered": 9,
     "dead404": 15,
