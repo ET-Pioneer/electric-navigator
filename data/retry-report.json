@@ -238,5 +238,11 @@
       "ok": false,
       "error": "all candidates failed"
     }
-  ]
+  ],
+  "deadRemoved": {},
+  "summary": {
+    "recovered": 9,
+    "dead404": 15,
+    "total": 24
+  }
 }
