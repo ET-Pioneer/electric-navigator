@@ -110,6 +110,7 @@ async function main(){
   console.log(`→ ${list.length} unique PDFs to index`);
 
   const byLang = {};
+  const summary = { generated: "", languages: {} };
   // Resume: load existing per-language JSONs to skip already-indexed (with text) PDFs
   const already = new Set();
   if (RESUME){

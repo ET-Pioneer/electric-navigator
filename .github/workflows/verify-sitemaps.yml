@@ -21,6 +21,9 @@ jobs:
         run: |
           if [ -f package-lock.json ]; then npm ci; else npm install; fi
 
+      - name: Build full PDF index (resumable)
+        run: node scripts/build-pdf-index.mjs
+
       - name: Run validator tests
         run: npx vitest run
 
