@@ -24,6 +24,7 @@ const RAW = `https://raw.githubusercontent.com/${REPO}/main/`;
 const ARGS = new Set(process.argv.slice(2));
 const LIMIT = (() => { const i = process.argv.indexOf("--limit"); return i>0 ? +process.argv[i+1] : 0; })();
 const NO_FETCH = ARGS.has("--no-fetch");
+const RESUME = !ARGS.has("--no-resume");
 
 // Map repo folder language directories to ISO codes used by site
 const FOLDER2LANG = {
@@ -109,6 +110,24 @@ async function main(){
   console.log(`→ ${list.length} unique PDFs to index`);
 
   const byLang = {};
+  // Resume: load existing per-language JSONs to skip already-indexed (with text) PDFs
+  const already = new Set();
+  if (RESUME){
+    try {
+      const files = (await fs.readdir(path.join(ROOT, "data"))).filter(f => /^search_[a-z]{2}\.json$/.test(f));
+      for (const f of files){
+        const j = JSON.parse(await fs.readFile(path.join(ROOT, "data", f), "utf8"));
+        const lang = j.lang;
+        for (const d of (j.docs||[])){
+          if (d.length > 0){
+            already.add(d.url);
+            (byLang[lang] ||= []).push(d);
+          }
+        }
+      }
+      console.log(`  resume: ${already.size} docs already indexed`);
+    } catch(e){}
+  }
   let done = 0, failed = 0;
 
   // Concurrency control
@@ -117,6 +136,7 @@ async function main(){
   async function worker(){
     while (i < list.length){
       const job = list[i++];
+      if (already.has(job.url)) { done++; continue; }
       try {
         let text = "";
         if (!NO_FETCH){
@@ -134,15 +154,21 @@ async function main(){
           fullText: text.length < 800_000 ? text : ex
         });
         done++;
-        if (done % 25 === 0) console.log(`  …${done}/${list.length}`);
+        if (done % 10 === 0) console.log(`  …${done}/${list.length}`);
+        // Periodic checkpoint write every 50 successful docs
+        if (done % 50 === 0) await writeAll(byLang, summary);
       } catch(e){ failed++; }
     }
   }
   await Promise.all(Array.from({length:CONC}, worker));
   console.log(`✓ Indexed ${done}, failed ${failed}`);
+  await writeAll(byLang, summary);
+  console.log("✅ wrote data/search_*.json + index_*.html for", Object.keys(byLang).length, "languages");
+}
 
-  // Write per-language JSON + HTML
-  const summary = { generated: new Date().toISOString(), languages: {} };
+async function writeAll(byLang, summary){
+  summary.generated = new Date().toISOString();
+  summary.languages = {};
   for (const [lang, docs] of Object.entries(byLang)){
     docs.sort((a,b)=>a.name.localeCompare(b.name));
     await fs.writeFile(path.join(ROOT, "data", `search_${lang}.json`),
@@ -179,7 +205,6 @@ async function main(){
     await fs.writeFile(path.join(ROOT, `index_${lang}.html`), html);
   }
   await fs.writeFile(path.join(ROOT, "data", "search-index.json"), JSON.stringify(summary, null, 2));
-  console.log("✅ wrote data/search_*.json + index_*.html for", Object.keys(byLang).length, "languages");
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
