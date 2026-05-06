@@ -1,0 +1,242 @@
+{
+  "total": 24,
+  "byLang": {
+    "ar": {
+      "ok": 0,
+      "fail": 3
+    },
+    "ca": {
+      "ok": 0,
+      "fail": 1
+    },
+    "el": {
+      "ok": 0,
+      "fail": 1
+    },
+    "en": {
+      "ok": 9,
+      "fail": 0
+    },
+    "fa": {
+      "ok": 0,
+      "fail": 1
+    },
+    "fr": {
+      "ok": 0,
+      "fail": 5
+    },
+    "he": {
+      "ok": 0,
+      "fail": 1
+    },
+    "it": {
+      "ok": 0,
+      "fail": 1
+    },
+    "ru": {
+      "ok": 0,
+      "fail": 1
+    },
+    "ur": {
+      "ok": 0,
+      "fail": 1
+    }
+  },
+  "items": [
+    {
+      "lang": "ar",
+      "name": "Arabian_State_Founding_for_Dummies_How_to_Start_Your_Own_Country_تأسيس الدولة للمبتدئين_كيف تبدأ دولتك_الخاصة.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/Arabic%20-%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/Arabian_State_Founding_for_Dummies_How_to_Start_Your_Own_Country_%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9%20%D9%84%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D8%A6%D9%8A%D9%86_%D9%83%D9%8A%D9%81%20%D8%AA%D8%A8%D8%AF%D8%A3%20%D8%AF%D9%88%D9%84%D8%AA%D9%83_%D8%A7%D9%84%D8%AE%D8%A7%D8%B5%D8%A9.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "ar",
+      "name": "Arabian_Trillions_for_the_Future-AI,_Power,_and_Post-Scarcity_-_Electric_Technocracy_تريليونات من أجل المستقبل - الذكاء الاصطناعي والطاقة وما بعد الندرة - التكنوقراطية الكهربائية.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/Arabic%20-%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/Arabian_Trillions_for_the_Future-AI,_Power,_and_Post-Scarcity_-_Electric_Technocracy_%D8%AA%D8%B1%D9%8A%D9%84%D9%8A%D9%88%D9%86%D8%A7%D8%AA%20%D9%85%D9%86%20%D8%A3%D8%AC%D9%84%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%20-%20%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1%20%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%20%D9%88%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9%20%D9%88%D9%85%D8%A7%20%D8%A8%D8%B9%D8%AF%20%D8%A7%D9%84%D9%86%D8%AF%D8%B1%D8%A9%20-%20%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%82%D8%B1%D8%A7%D8%B7%D9%8A%D8%A9%20%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "ar",
+      "name": "Arabic_World-Sold-Non-fiction-Succession-Deed_خلافة الدول على الصعيد العالمي - العالم تم بيعه.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/Arabic%20-%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/Arabic_World-Sold-Non-fiction-Succession-Deed_%D8%AE%D9%84%D8%A7%D9%81%D8%A9%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%B5%D8%B9%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A%20-%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%20%D8%AA%D9%85%20%D8%A8%D9%8A%D8%B9%D9%87.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "ca",
+      "name": "Catalan_State_Founding_for_Dummies_How_to_Start_Your_Own_Country-Fundació d&apos;Estats per a Dummies - Com fundar el teu propi país.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/Catalan%20-%20Catal%C3%A0/Catalan_State_Founding_for_Dummies_How_to_Start_Your_Own_Country-Fundaci%C3%B3%20d&apos;Estats%20per%20a%20Dummies%20-%20Com%20fundar%20el%20teu%20propi%20pa%C3%ADs.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "el",
+      "name": "Greek_State_Founding_for_Dummies_How_to_Start_Your_Own_Country-Ίδρυση κράτου για αρχάριους - Πώς να ιδρύσετε τη δική σας χώρα.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/Greek%20-%20%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC/Greek_State_Founding_for_Dummies_How_to_Start_Your_Own_Country-%CE%8A%CE%B4%CF%81%CF%85%CF%83%CE%B7%20%CE%BA%CF%81%CE%AC%CF%84%CE%BF%CF%85%20%CE%B3%CE%B9%CE%B1%20%CE%B1%CF%81%CF%87%CE%AC%CF%81%CE%B9%CE%BF%CF%85%CF%82%20-%20%CE%A0%CF%8E%CF%82%20%CE%BD%CE%B1%20%CE%B9%CE%B4%CF%81%CF%8D%CF%83%CE%B5%CF%84%CE%B5%20%CF%84%CE%B7%20%CE%B4%CE%B9%CE%BA%CE%AE%20%CF%83%CE%B1%CF%82%20%CF%87%CF%8E%CF%81%CE%B1.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "en",
+      "name": "Electric_Technocracy.pdf",
+      "originalUrl": "https://github.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/blob/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/Electric_Technocracy.pdf",
+      "ok": true,
+      "urlUsed": "https://raw.githubusercontent.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/Electric_Technocracy.pdf",
+      "length": 294491,
+      "words": 43203,
+      "preview": "Electric Technocracy: https://worldsold.wixsite.com/world-sold/en/electric-technocracy https://worldsold.wixsite.com/wor"
+    },
+    {
+      "lang": "en",
+      "name": "English_turenne_barracks_treaty_1400_98_06_10_1998_nato_brd_nl.PDF",
+      "originalUrl": "https://github.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/blob/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/English_turenne_barracks_treaty_1400_98_06_10_1998_nato_brd_nl.PDF",
+      "ok": true,
+      "urlUsed": "https://raw.githubusercontent.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/English_turenne_barracks_treaty_1400_98_06_10_1998_nato_brd_nl.PDF",
+      "length": 52371,
+      "words": 937,
+      "preview": "Federal\u0003Archives\u0003Koblenz\u0003-\u0003Main\u0003Office\u0003 www.bundesarchiv.de Certificate\u0003Number\u00031400/98 -\u00031\u0003- PUBLICATION Kreuzbergkasern"
+    },
+    {
+      "lang": "en",
+      "name": "Micronation_Made_Easy.pdf",
+      "originalUrl": "https://github.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/blob/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/Micronation_Made_Easy.pdf",
+      "ok": true,
+      "urlUsed": "https://raw.githubusercontent.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/Micronation_Made_Easy.pdf",
+      "length": 197179,
+      "words": 29403,
+      "preview": "-- 1 of 190 -- Micronation Made Easy The Lazy Rebel Declares Independence Starting a State for Beginners Or: How to Star"
+    },
+    {
+      "lang": "en",
+      "name": "State_Founding_for_Dummies_How_to_Start_Your_Own_Country.pdf",
+      "originalUrl": "https://github.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/blob/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/State_Founding_for_Dummies_How_to_Start_Your_Own_Country.pdf",
+      "ok": true,
+      "urlUsed": "https://raw.githubusercontent.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/State_Founding_for_Dummies_How_to_Start_Your_Own_Country.pdf",
+      "length": 124938,
+      "words": 18888,
+      "preview": "-- 1 of 107 -- State Founding for Dummies How to Start Your Own Country A Guide to Micronations, State Succession & Glob"
+    },
+    {
+      "lang": "en",
+      "name": "Trillions for the Future-AI, Power, and Post-Scarcity - Electric Technocracy.pdf",
+      "originalUrl": "https://github.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/blob/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/Trillions%20for%20the%20Future-AI%2C%20Power%2C%20and%20Post-Scarcity%20-%20Electric%20Technocracy.pdf",
+      "ok": true,
+      "urlUsed": "https://raw.githubusercontent.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/Trillions%20for%20the%20Future-AI%2C%20Power%2C%20and%20Post-Scarcity%20-%20Electric%20Technocracy.pdf",
+      "length": 80568,
+      "words": 11603,
+      "preview": "-- 1 of 72 -- 💲💲💲💲💲💲💲💲 Trillions for the Future 💲💲💲💲💲💲💲💲 AI, Power and Post-Scarcity ⚡The Buyer 2025⚡ 🌐"
+    },
+    {
+      "lang": "en",
+      "name": "UBI and the Future of Humanity – From Work to Electric Technocracy.pdf",
+      "originalUrl": "https://github.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/blob/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/UBI%20and%20the%20Future%20of%20Humanity%20%E2%80%93%20From%20Work%20to%20Electric%20Technocracy.pdf",
+      "ok": true,
+      "urlUsed": "https://raw.githubusercontent.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/UBI%20and%20the%20Future%20of%20Humanity%20%E2%80%93%20From%20Work%20to%20Electric%20Technocracy.pdf",
+      "length": 59011,
+      "words": 9562,
+      "preview": "-- 1 of 47 -- 🌐 Website - Electric Technocracy: http://ep.ct.ws UBI and the Future of Humanity From Work to Electric Te"
+    },
+    {
+      "lang": "en",
+      "name": "UBI Universal Basic Income And The Electric Technocracy.pdf",
+      "originalUrl": "https://github.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/blob/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/UBI%20Universal%20Basic%20Income%20And%20The%20Electric%20Technocracy.pdf",
+      "ok": true,
+      "urlUsed": "https://raw.githubusercontent.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/UBI%20Universal%20Basic%20Income%20And%20The%20Electric%20Technocracy.pdf",
+      "length": 15288,
+      "words": 2487,
+      "preview": "🎥 YouTube explainer Video Universal Basic Income (UBI): https://youtu.be/cbyME1y4m4o 🎙 Podcast Episode (UBI): https://"
+    },
+    {
+      "lang": "en",
+      "name": "World_Sold_State_succession_deed_1400.pdf",
+      "originalUrl": "https://github.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/blob/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/World_Sold_State_succession_deed_1400.pdf",
+      "ok": true,
+      "urlUsed": "https://raw.githubusercontent.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/World_Sold_State_succession_deed_1400.pdf",
+      "length": 621302,
+      "words": 97251,
+      "preview": "N. W. O. New World Order – Neue Weltordnung https://worldsold.wixsite.com/world-sold The whole world is sold!!! A global"
+    },
+    {
+      "lang": "en",
+      "name": "World-Sold-Non-fiction-Succession-Deed.pdf",
+      "originalUrl": "https://github.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/blob/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/World-Sold-Non-fiction-Succession-Deed.pdf",
+      "ok": true,
+      "urlUsed": "https://raw.githubusercontent.com/ET-Pioneer/Electric-Technocracy-Pioneers-Community/4fe4bdf1b29b7534ca69b04fd1a993ce344d7682/pdf/english/World-Sold-Non-fiction-Succession-Deed.pdf",
+      "length": 295239,
+      "words": 43060,
+      "preview": "-- 1 of 160 -- 🌍 WORLD 🌍 SOLD WORLD SUCCESSION DEED 📜 1400/98 📜 Staatensukzessionsurkunde The international treaty t"
+    },
+    {
+      "lang": "fa",
+      "name": "Persian_World-Sold-Non-fiction-Succession-Deed_جهان فروخته شد - جانشینی دولتی همه کشورهای جهان.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/Persian%20-%20%D9%81%D8%A7%D8%B1%D8%B3%DB%8C/Persian_World-Sold-Non-fiction-Succession-Deed_%D8%AC%D9%87%D8%A7%D9%86%20%D9%81%D8%B1%D9%88%D8%AE%D8%AA%D9%87%20%D8%B4%D8%AF%20-%20%D8%AC%D8%A7%D9%86%D8%B4%DB%8C%D9%86%DB%8C%20%D8%AF%D9%88%D9%84%D8%AA%DB%8C%20%D9%87%D9%85%D9%87%20%DA%A9%D8%B4%D9%88%D8%B1%D9%87%D8%A7%DB%8C%20%D8%AC%D9%87%D8%A7%D9%86.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "fr",
+      "name": "FrenchElectricTechnocracyTechnocratieélectrique.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/French%20-%20fran%C3%A7ais/FrenchElectricTechnocracyTechnocratie%C3%A9lectrique.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "fr",
+      "name": "FrenchMicronationMadeEasyLa micronation en toute simplicité.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/French%20-%20fran%C3%A7ais/FrenchMicronationMadeEasyLa%20micronation%20en%20toute%20simplicit%C3%A9.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "fr",
+      "name": "Frenchturennekasernevertrag14009806101998natobrd_nl-Registre des actes de vente.PDF",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/French%20-%20fran%C3%A7ais/Frenchturennekasernevertrag14009806101998natobrd_nl-Registre%20des%20actes%20de%20vente.PDF",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "fr",
+      "name": "FrenchUBIUniversalBasicIncomeAndTheElectricTechnocracyRUBRevenuuniverseldebaseettechnocratieélectrique.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/French%20-%20fran%C3%A7ais/FrenchUBIUniversalBasicIncomeAndTheElectricTechnocracyRUBRevenuuniverseldebaseettechnocratie%C3%A9lectrique.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "fr",
+      "name": "FrenchWorldSoldStatesuccessiondeed1400-Le monde vendu - succession globale des États.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/French%20-%20fran%C3%A7ais/FrenchWorldSoldStatesuccessiondeed1400-Le%20monde%20vendu%20-%20succession%20globale%20des%20%C3%89tats.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "he",
+      "name": "Hebrew_UBI_and_the_Future_of_Humanity_–_From_Work_to_Electric_Technocracy-הכנסה בסיסית בלתי מותנת ועתיד האנושות – מעבודה לטכנוקרטיה חשמלית.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/Hebrew%20-%20%D7%A2%D7%91%D7%A8%D7%99%D7%AA/Hebrew_UBI_and_the_Future_of_Humanity_%E2%80%93_From_Work_to_Electric_Technocracy-%D7%94%D7%9B%D7%A0%D7%A1%D7%94%20%D7%91%D7%A1%D7%99%D7%A1%D7%99%D7%AA%20%D7%91%D7%9C%D7%AA%D7%99%20%D7%9E%D7%95%D7%AA%D7%A0%D7%AA%20%D7%95%D7%A2%D7%AA%D7%99%D7%93%20%D7%94%D7%90%D7%A0%D7%95%D7%A9%D7%95%D7%AA%20%E2%80%93%20%D7%9E%D7%A2%D7%91%D7%95%D7%93%D7%94%20%D7%9C%D7%98%D7%9B%D7%A0%D7%95%D7%A7%D7%A8%D7%98%D7%99%D7%94%20%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "it",
+      "name": "Italian_UBI_and_the_Future_of_Humanity_–_From_Work_to_Electric_Technocracy_RBU e il futuro dell&apos;umanità - dal lavoro alla tecnocrazia elettrica.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/Italian%20-%20italiano/Italian_UBI_and_the_Future_of_Humanity_%E2%80%93_From_Work_to_Electric_Technocracy_RBU%20e%20il%20futuro%20dell&apos;umanit%C3%A0%20-%20dal%20lavoro%20alla%20tecnocrazia%20elettrica.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "ru",
+      "name": "Russian_turenne_kaserne_vertrag_1400_98_06_10_1998_nato_brd_nl-Реестр догов купли-продажи.PDF",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/Russian%20-%20%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/Russian_turenne_kaserne_vertrag_1400_98_06_10_1998_nato_brd_nl-%D0%A0%D0%B5%D0%B5%D1%81%D1%82%D1%80%20%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%20%D0%BA%D1%83%D0%BF%D0%BB%D0%B8-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8.PDF",
+      "ok": false,
+      "error": "all candidates failed"
+    },
+    {
+      "lang": "ur",
+      "name": "Urdu_UBI_Universal_Basic_Income_And_The_Electric_Technocracy-يونيورسل بيسک انکم اور الیکٹرک ٹیکنوکریسی.pdf",
+      "originalUrl": "https://et-pioneer.github.io/Electric-Technocracy-Pioneers-Community/pdf/Urdu%20-%20%D8%A7%D8%B1%D8%AF%D9%88/Urdu_UBI_Universal_Basic_Income_And_The_Electric_Technocracy-%D9%8A%D9%88%D9%86%D9%8A%D9%88%D8%B1%D8%B3%D9%84%20%D8%A8%D9%8A%D8%B3%DA%A9%20%D8%A7%D9%86%DA%A9%D9%85%20%D8%A7%D9%88%D8%B1%20%D8%A7%D9%84%DB%8C%DA%A9%D9%B9%D8%B1%DA%A9%20%D9%B9%DB%8C%DA%A9%D9%86%D9%88%DA%A9%D8%B1%DB%8C%D8%B3%DB%8C.pdf",
+      "ok": false,
+      "error": "all candidates failed"
+    }
+  ]
+}
