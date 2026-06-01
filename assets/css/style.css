@@ -11,7 +11,7 @@
   --muted:#4a5b73;
   --border:#d4dbe6;
   --radius:6px;
-  --maxw:1100px;
+  --maxw:100%;
   --shadow:0 2px 8px rgba(10,34,64,.08);
 }
 *{box-sizing:border-box}
@@ -28,7 +28,7 @@ body{
 img{max-width:100%;height:auto;display:block}
 a{color:var(--nato-blue-2);text-decoration:underline;text-underline-offset:2px}
 a:hover{color:var(--nato-accent)}
-.container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 1rem}
+.container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,3vw,2.5rem)}
 
 /* Skip link */
 .skip-link{
@@ -141,11 +141,37 @@ body.nav-open{overflow:hidden}
 
 /* Hero */
 .hero{
+  position:relative;
   background:
-    radial-gradient(circle at 20% 0%,rgba(201,162,39,.15),transparent 60%),
-    linear-gradient(180deg,var(--nato-blue),var(--nato-blue-2));
-  color:#fff;padding:3rem 0 3.5rem;
+    linear-gradient(180deg,rgba(10,34,64,.78),rgba(19,49,92,.88)),
+    url("/__l5e/assets-v1/5bbd3c09-d909-48f8-978c-2a848373f626/hero-logo.jpg") center/cover no-repeat;
+  color:#fff;padding:clamp(3rem,8vw,6rem) 0 clamp(3rem,8vw,6rem);
   border-bottom:3px solid var(--nato-gold);
+  text-shadow:0 2px 10px rgba(0,0,0,.45);
+}
+
+/* Embeds grid */
+.embeds{padding:2.5rem 0;background:var(--surface-alt);border-bottom:1px solid var(--border)}
+.embeds h2{
+  font-size:clamp(1.35rem,3.5vw,1.75rem);color:var(--nato-blue);
+  border-left:4px solid var(--nato-gold);padding-left:.75rem;margin:0 0 1.25rem;
+}
+.embed-grid{display:grid;grid-template-columns:1fr;gap:1.25rem}
+@media(min-width:760px){.embed-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1200px){.embed-grid{grid-template-columns:repeat(3,1fr)}}
+.embed-card{
+  background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--nato-blue);
+  border-radius:var(--radius);padding:.9rem;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;gap:.6rem;min-width:0;
+}
+.embed-card h3{margin:0;color:var(--nato-blue);font-size:1rem;font-family:Arial,Helvetica,sans-serif}
+.embed-card .embed-frame{position:relative;width:100%;overflow:hidden;border-radius:4px;background:#000}
+.embed-card iframe{display:block;width:100%;border:0;border-radius:4px}
+.embed-card.tall iframe{height:550px}
+.embed-card.short iframe{height:152px}
+.embed-card.sc iframe{height:300px}
+@media(max-width:600px){
+  .embed-card.tall iframe{height:480px}
 }
 .hero .eyebrow{
   text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;
