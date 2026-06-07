@@ -1,0 +1,30 @@
+# Electric Technocracy Community Navigator
+
+> Multilingual dossier and research navigator on Electric Technocracy: a community-driven knowledge base covering people, places, installations, cable lines, and units, with full-text search across 600+ source PDFs in 33 languages.
+
+## Pages
+
+- [Home (English)](/index_en.html): English entry point and overview of the navigator.
+- [Home (multilingual)](/): Language picker and global landing page.
+- [Search](/search.html): Full-text search across all indexed PDFs and chapters.
+- [Cross-reference index](/xref.html): People, places, installations, cable lines and units with in-page backlinks.
+- [Sitemaps overview](/sitemaps.html): Per-language sitemap index.
+- [Audit log](/audit.html): Build, indexing and link-audit reports.
+
+## Language editions
+
+- [Deutsch](/united_de.html)
+- [Français](/united_fr.html)
+- [Español](/united_es.html)
+- [Italiano](/united_it.html)
+- [Português](/united_pt.html)
+- [Nederlands](/united_nl.html)
+- [Русский](/united_ru.html)
+- [中文](/united_zh.html)
+- [日本語](/united_ja.html)
+- [العربية](/united_ar.html)
+
+## Optional
+
+- [sitemap.xml](/sitemap.xml): Machine-readable URL index.
+- [robots.txt](/robots.txt): Crawler rules.
