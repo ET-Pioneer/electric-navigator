@@ -72,8 +72,22 @@
   const q = document.getElementById("q");
   const rtlBtn = document.getElementById("rtlToggle");
   let data;
-  try { data = await (await fetch("data/xref.json", {cache:"no-store"})).json(); }
-  catch(e){ content.innerHTML = "<p>Index not built. Run: <code>node scripts/build-xref.mjs</code></p>"; return; }
+  try {
+    const r = await fetch("data/xref.json", {cache:"no-store"});
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    data = await r.json();
+    if (!data || typeof data !== "object") throw new Error("Malformed xref.json");
+  } catch(e){
+    content.innerHTML =
+      `<div style="background:#fff8e1;border:1px solid var(--nato-gold);padding:1rem;border-radius:6px">
+        <strong>⚠️ Cross-reference index unavailable</strong><br>
+        <span style="font-size:.88rem">Could not load <code>data/xref.json</code> (${e.message||e}).
+        If running locally, build it with <code>node scripts/build-xref.mjs</code>.</span><br><br>
+        <a href="./index.html">← Home</a> · <a href="./search.html">Full-text search</a> · <a href="./sitemaps.html">Sitemaps</a> · <a href="./audit.html">Audit</a>
+        <button type="button" style="margin-left:.5rem;padding:.4rem .85rem;border:1px solid var(--nato-blue);background:var(--nato-blue);color:#fff;border-radius:4px;cursor:pointer" onclick="location.reload()">Retry</button>
+      </div>`;
+    return;
+  }
 
   const cats = Object.keys(data);
   const langSet = new Set();
