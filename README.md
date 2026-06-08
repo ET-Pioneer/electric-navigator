@@ -32,7 +32,7 @@ This repository is a navigation hub for researchers, legal thinkers, technologis
 
 Electric Technocracy is a post-national governance model for the age of Artificial Superintelligence, robotics, automation, post-scarcity economics, and global legal transformation. It combines the legal foundation of the **World Succession Deed 1400/98**, the doctrine of **Juridical Singularity**, **Direct Digital Democracy**, non-sovereign **ASI analysis**, a **Tech-Tax** on automated productivity, and a universal **World Dividend** for all humans.
 
-The purpose of this navigator is to make the whole ecosystem easier to understand, explore, document, publish, translate, archive, and expand.
+The purpose of this navigator is to make the whole ecosystem easier to understand, explore, document, publish, translate, archive, and expand. 
 
 ---
 
