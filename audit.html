@@ -38,6 +38,23 @@
     </tr></thead>
     <tbody id="rows"></tbody>
   </table>
+
+  <h2 style="margin-top:2.5rem">📚 PDF Retry Recovery Report</h2>
+  <p class="stats" id="retry-meta" style="color:var(--muted);font-size:.9rem">Loading retry reports…</p>
+  <table id="retry-table" style="margin-top:.5rem">
+    <thead><tr>
+      <th>Lang</th>
+      <th>Initial fail</th>
+      <th>Retry OK</th>
+      <th>Retry fail</th>
+      <th>Recovery %</th>
+      <th>Status</th>
+    </tr></thead>
+    <tbody id="retry-rows"></tbody>
+  </table>
+  <details id="retry-errors" style="margin-top:.75rem"><summary style="cursor:pointer">Show per-file error messages</summary>
+    <ul id="retry-errors-list" style="margin:.5rem 0 0 1.25rem;font-size:.85rem"></ul>
+  </details>
 </main>
 <script>
 (async function(){
@@ -88,6 +105,58 @@
     a.click();
   });
   window.__auditReport = report;
+})();
+
+/* ───────── PDF retry-report panel ───────── */
+(async function(){
+  const meta = document.getElementById("retry-meta");
+  const tbody = document.getElementById("retry-rows");
+  const errList = document.getElementById("retry-errors-list");
+  async function load(path){
+    try { const r = await fetch(path,{cache:"no-store"}); return r.ok ? await r.json() : null; }
+    catch(e){ return null; }
+  }
+  const [orig, v2] = await Promise.all([load("data/retry-report.json"), load("data/retry-report-v2.json")]);
+  if (!orig && !v2){ meta.textContent = "No retry reports found (data/retry-report.json missing)."; return; }
+
+  // Merge per-lang stats: orig.byLang.fail = initial failure count; v2.byLang.ok/fail = retry result.
+  const langs = new Set([...Object.keys(orig?.byLang||{}), ...Object.keys(v2?.byLang||{})]);
+  let totFail=0, totOk=0, totStillFail=0;
+  [...langs].sort().forEach(lang => {
+    const initFail = orig?.byLang?.[lang]?.fail ?? 0;
+    const ok = v2?.byLang?.[lang]?.ok ?? 0;
+    const fail = v2?.byLang?.[lang]?.fail ?? Math.max(0, initFail - ok);
+    const denom = ok + fail || initFail;
+    const pct = denom ? Math.round((ok / denom) * 100) : 100;
+    totFail += initFail; totOk += ok; totStillFail += fail;
+    const cls = fail === 0 ? "ok" : (ok === 0 ? "bad" : "");
+    const status = fail === 0 ? "✅ recovered" : (ok === 0 ? "❌ unresolved" : `⚠ ${fail} left`);
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td><code>${lang}</code></td>
+      <td>${initFail}</td>
+      <td class="${ok>0?'ok':''}">${ok}</td>
+      <td class="${fail>0?'bad':''}">${fail}</td>
+      <td>${pct}%</td>
+      <td class="${cls}">${status}</td>`;
+    tbody.appendChild(tr);
+  });
+  const recoveredPct = totFail ? Math.round((totOk/totFail)*100) : 100;
+  meta.innerHTML = `Initial failures: <b>${totFail}</b> · Recovered: <b class="ok">${totOk}</b> · Still failing: <b class="${totStillFail?'bad':'ok'}">${totStillFail}</b> · Recovery rate: <b>${recoveredPct}%</b>` +
+    (v2?.generated ? ` · last retry: ${new Date(v2.generated).toLocaleString()}` : "");
+
+  // Per-file error/recovery messages
+  const items = [...(orig?.items||[]), ...(v2?.items||[])];
+  const seen = new Set();
+  items.forEach(it => {
+    const key = (it.lang||"")+"|"+(it.name||"");
+    if (seen.has(key)) return; seen.add(key);
+    const li = document.createElement("li");
+    const status = it.ok ? "✅" : "❌";
+    const detail = it.ok ? `recovered → <code style="font-size:11px">${(it.repoPath||it.resolvedUrl||"").slice(0,120)}</code>` : `<span class="bad">${it.error||"failed"}</span>`;
+    li.innerHTML = `${status} <code>[${it.lang}]</code> ${it.name} — ${detail}`;
+    errList.appendChild(li);
+  });
+  if (!errList.children.length) errList.innerHTML = "<li>No per-file records.</li>";
 })();
 </script>
 </body></html>
