@@ -9,22 +9,38 @@
 <link rel="stylesheet" href="./assets/css/style.css"/>
 <style>
   .xref-shell{padding:1.5rem 1rem;max-width:1100px;margin:0 auto}
-  .xref-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0;position:sticky;top:0;background:var(--bg);padding:.6rem 0;z-index:10}
+  .xref-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0;position:sticky;top:0;background:var(--bg);padding:.6rem 0;z-index:10;align-items:center}
   .xref-controls input,.xref-controls select{padding:.55rem .75rem;border:1px solid var(--border);border-radius:6px;font-size:1rem;background:#fff;color:var(--text)}
   .xref-controls input{flex:1;min-width:240px}
+  .xref-controls button{padding:.55rem .9rem;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--text);cursor:pointer;font-size:.95rem}
+  .xref-controls button.active{background:var(--nato-blue);color:#fff;border-color:var(--nato-blue)}
   .cat{margin:1.5rem 0;padding-top:.5rem;border-top:2px solid var(--nato-gold)}
   .cat h2{margin:.25rem 0;color:var(--nato-blue);text-transform:capitalize}
   .term{margin:.6rem 0;padding:.7rem;background:#fff;border:1px solid var(--border);border-left:3px solid var(--nato-blue);border-radius:6px}
   .term h3{margin:0 0 .25rem;font-size:1rem;display:flex;justify-content:space-between;align-items:baseline;gap:.5rem}
   .term h3 small{color:var(--muted);font-weight:400}
-  .term ul{margin:.25rem 0 0 1rem;padding:0;font-size:.9rem}
+  .term ul{margin:.25rem 0 0 1rem;padding:0;font-size:.9rem;list-style:none}
+  .term li{margin:.55rem 0;padding:.5rem .65rem;background:#fafbfd;border:1px solid var(--border);border-radius:5px}
+  .term li.rtl{direction:rtl;text-align:right}
   .term a{color:var(--nato-blue)}
+  .hit-meta{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin-bottom:.25rem;font-size:.82rem}
+  .lang-badge{display:inline-block;background:var(--nato-blue);color:#fff;padding:1px 6px;border-radius:3px;font-size:.72rem;font-weight:700;letter-spacing:.5px}
+  .section-badge{color:var(--muted);font-style:italic}
+  .snippet{color:#333;font-size:.88rem;line-height:1.45;margin:.25rem 0}
+  .snippet mark{background:var(--nato-gold);color:var(--nato-blue);padding:0 2px;border-radius:2px}
+  .hit-actions{font-size:.8rem}
+  .hit-actions a{margin-right:.55rem;text-decoration:none}
+  [dir="rtl"] .hit-actions a{margin-right:0;margin-left:.55rem}
   .toc{display:flex;flex-wrap:wrap;gap:.5rem;margin:.5rem 0 1rem}
   .toc a{padding:.3rem .7rem;background:var(--nato-blue);color:#fff;border-radius:4px;text-decoration:none;font-size:.85rem}
   .toc a:hover{background:var(--nato-gold);color:var(--nato-blue)}
   .anchor{scroll-margin-top:80px}
   .stats{color:var(--muted);font-size:.9rem}
   .hidden{display:none}
+  @media(max-width:640px){
+    .xref-shell{padding:1rem .65rem}
+    .term h3{flex-direction:column;align-items:flex-start;gap:.15rem}
+  }
 </style>
 </head>
 <body>
@@ -38,39 +54,76 @@
   <div class="xref-controls">
     <input id="q" type="search" placeholder="Filter terms…" autofocus />
     <select id="cat"><option value="">All categories</option></select>
+    <select id="lang"><option value="">All languages</option></select>
+    <button id="rtlToggle" type="button" title="Toggle right-to-left layout (Arabic / Hebrew / Persian / Urdu)">RTL</button>
   </div>
   <div id="content"><p class="stats">Loading…</p></div>
   <p style="margin-top:2rem"><a href="./index.html">← Home</a> · <a href="./search.html">Full-text search</a> · <a href="./sitemaps.html">Sitemaps</a> · <a href="./audit.html">Audit</a></p>
 </main>
 <script>
 (async function(){
+  const RTL_LANGS = new Set(["ar","he","fa","ur"]);
   const content = document.getElementById("content");
   const toc = document.getElementById("toc");
   const catSel = document.getElementById("cat");
+  const langSel = document.getElementById("lang");
   const q = document.getElementById("q");
+  const rtlBtn = document.getElementById("rtlToggle");
   let data;
   try { data = await (await fetch("data/xref.json", {cache:"no-store"})).json(); }
   catch(e){ content.innerHTML = "<p>Index not built. Run: <code>node scripts/build-xref.mjs</code></p>"; return; }
 
   const cats = Object.keys(data);
+  const langSet = new Set();
+  for (const c of cats) for (const hits of Object.values(data[c])) for (const h of hits) if (h.lang) langSet.add(h.lang);
+  [...langSet].sort().forEach(l => {
+    const o = document.createElement("option"); o.value = l; o.textContent = l.toUpperCase() + (RTL_LANGS.has(l)?" ⇇":""); langSel.appendChild(o);
+  });
   cats.forEach(c => {
     const a = document.createElement("a"); a.href = "#cat-"+c; a.textContent = c+" ("+Object.keys(data[c]).length+")"; toc.appendChild(a);
     const o = document.createElement("option"); o.value = c; o.textContent = c; catSel.appendChild(o);
   });
 
+  function escHtml(s){return (s||"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+  function highlight(snip, term){
+    const safe = escHtml(snip);
+    if (!term) return safe;
+    const re = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"), "gi");
+    return safe.replace(re, m => `<mark>${m}</mark>`);
+  }
+
   function render(){
     const term = q.value.trim().toLowerCase();
     const onlyCat = catSel.value;
+    const onlyLang = langSel.value;
     let html = "";
     for (const c of cats){
       if (onlyCat && c !== onlyCat) continue;
-      const entries = Object.entries(data[c]).filter(([k]) => !term || k.toLowerCase().includes(term));
+      const entries = Object.entries(data[c])
+        .map(([k, hits]) => [k, onlyLang ? hits.filter(h => h.lang === onlyLang) : hits])
+        .filter(([k, hits]) => hits.length && (!term || k.toLowerCase().includes(term)));
       if (!entries.length) continue;
       html += `<section class="cat anchor" id="cat-${c}"><h2>${c} <small style="font-size:.7em;color:#888">(${entries.length})</small></h2>`;
       for (const [name, hits] of entries){
         const slug = c+"-"+name.toLowerCase().replace(/[^a-z0-9]+/g,"-");
-        html += `<div class="term anchor" id="${slug}"><h3><span>${name}</span><small>${hits.length} doc${hits.length===1?"":"s"} · <a href="#${slug}">¶</a></small></h3><ul>`;
-        for (const h of hits) html += `<li><a href="${h.url}" rel="noopener" target="_blank">${h.name}</a></li>`;
+        const searchHref = `./search.html?q=${encodeURIComponent(name)}`;
+        html += `<div class="term anchor" id="${slug}"><h3><span>${escHtml(name)}</span><small>${hits.length} hit${hits.length===1?"":"s"} · <a href="${searchHref}" title="Open in full-text search">🔍 search</a> · <a href="#${slug}">¶</a></small></h3><ul>`;
+        for (const h of hits) {
+          const rtl = RTL_LANGS.has(h.lang);
+          const searchUrl = `./search.html?q=${encodeURIComponent(name)}&lang=${encodeURIComponent(h.lang||"")}`;
+          html += `<li${rtl?' class="rtl" dir="rtl"':''}>
+            <div class="hit-meta">
+              <span class="lang-badge">${(h.lang||"?").toUpperCase()}</span>
+              ${h.section ? `<span class="section-badge">§ ${escHtml(h.section)}</span>` : ""}
+            </div>
+            ${h.snippet ? `<div class="snippet">${highlight(h.snippet, name)}</div>` : ""}
+            <div class="hit-actions">
+              <a href="${searchUrl}">🔍 Search “${escHtml(name)}”</a>
+              <a href="${h.url}" rel="noopener" target="_blank">📄 Open PDF →</a>
+            </div>
+            <div style="font-size:.78rem;color:#888;margin-top:.2rem;word-break:break-word">${escHtml(h.name)}</div>
+          </li>`;
+        }
         html += `</ul></div>`;
       }
       html += `</section>`;
@@ -79,6 +132,21 @@
   }
   q.addEventListener("input", render);
   catSel.addEventListener("change", render);
+  langSel.addEventListener("change", ()=>{
+    // Auto-engage RTL when filtering to an RTL language.
+    if (RTL_LANGS.has(langSel.value)) setRtl(true);
+    render();
+  });
+
+  function setRtl(on){
+    document.documentElement.dir = on ? "rtl" : "ltr";
+    rtlBtn.classList.toggle("active", on);
+    rtlBtn.setAttribute("aria-pressed", on ? "true" : "false");
+    try { localStorage.setItem("xref-rtl", on ? "1" : "0"); } catch(e){}
+  }
+  rtlBtn.addEventListener("click", ()=> setRtl(document.documentElement.dir !== "rtl"));
+  try { if (localStorage.getItem("xref-rtl") === "1") setRtl(true); } catch(e){}
+
   render();
   // Deep link: #cat-persons-tesla
   if (location.hash){ const el = document.querySelector(location.hash); if (el) el.scrollIntoView(); }
