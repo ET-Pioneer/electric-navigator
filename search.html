@@ -11,15 +11,23 @@
 <meta name="robots" content="index,follow"/>
 <style>
   .search-shell{padding:1.5rem 1rem;max-width:980px;margin:0 auto}
-  .search-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+  .search-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0;align-items:center}
   .search-controls input,.search-controls select{padding:.55rem .75rem;border:1px solid var(--border);border-radius:6px;font-size:1rem;background:#fff;color:var(--text)}
   .search-controls input{flex:1;min-width:240px}
+  .search-controls button{padding:.55rem .9rem;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--text);cursor:pointer;font-size:.95rem}
+  .search-controls button.active{background:var(--nato-blue);color:#fff;border-color:var(--nato-blue)}
   .hit{background:#fff;border:1px solid var(--border);border-left:3px solid var(--nato-gold);
        padding:1rem;border-radius:6px;margin:.6rem 0;box-shadow:var(--shadow)}
   .hit h3{margin:0 0 .25rem;font-size:1rem;color:var(--nato-blue)}
   .hit .snippet{font-size:.92rem;color:var(--muted);margin:.25rem 0 0}
   .hit mark{background:var(--nato-gold);color:var(--nato-blue);padding:0 2px;border-radius:2px}
   .stats{color:var(--muted);font-size:.9rem}
+  .error-box{background:#fff8e1;border:1px solid var(--nato-gold);color:var(--nato-blue);
+             padding:1rem;border-radius:6px;margin:1rem 0;font-size:.95rem;line-height:1.5}
+  .error-box button{margin-top:.5rem;padding:.4rem .85rem;border:1px solid var(--nato-blue);
+                    background:var(--nato-blue);color:#fff;border-radius:4px;cursor:pointer}
+  [dir="rtl"] .hit{border-left:1px solid var(--border);border-right:3px solid var(--nato-gold);text-align:right}
+  [dir="rtl"] .search-controls{flex-direction:row-reverse}
 </style>
 </head>
 <body>
@@ -30,43 +38,88 @@
   <h1>🔍 PDF Content Search</h1>
   <p class="stats" id="status">Loading index…</p>
   <div class="search-controls">
-    <input id="q" type="search" placeholder="Search the archive…" autofocus />
-    <select id="lang"><option value="">All languages</option></select>
+    <input id="q" type="search" placeholder="Search the archive…" autofocus aria-label="Search query" />
+    <select id="lang" aria-label="Language filter"><option value="">All languages</option></select>
+    <button id="rtlToggle" type="button" title="Toggle right-to-left layout (Arabic / Hebrew / Persian / Urdu)" aria-pressed="false">RTL</button>
   </div>
+  <div id="error-box" class="error-box" hidden></div>
   <div id="results"></div>
   <p style="margin-top:2rem"><a href="./index.html">← Home</a> · <a href="./sitemaps.html">Sitemap overview</a> · <a href="./audit.html">Audit report</a></p>
 </main>
 <script>
 (async function(){
+  const RTL_LANGS = new Set(["ar","he","fa","ur"]);
   const status = document.getElementById("status");
+  const errBox = document.getElementById("error-box");
+  const rtlBtn = document.getElementById("rtlToggle");
+  const langSel = document.getElementById("lang");
+  const q = document.getElementById("q");
+  const results = document.getElementById("results");
   const params = new URLSearchParams(location.search);
+
+  function setRtl(on){
+    document.documentElement.dir = on ? "rtl" : "ltr";
+    rtlBtn.classList.toggle("active", on);
+    rtlBtn.setAttribute("aria-pressed", on ? "true" : "false");
+    try { localStorage.setItem("search-rtl", on ? "1" : "0"); } catch(e){}
+  }
+  rtlBtn.addEventListener("click", ()=> setRtl(document.documentElement.dir !== "rtl"));
+  try { if (localStorage.getItem("search-rtl") === "1") setRtl(true); } catch(e){}
+
+  function showError(title, detail, canRetry){
+    errBox.hidden = false;
+    errBox.innerHTML =
+      `<strong>⚠️ ${title}</strong><br><span style="font-size:.88rem">${detail}</span><br>` +
+      `<a href="./index.html">← Home</a> · <a href="./xref.html">Cross-reference index</a> · <a href="./sitemaps.html">Sitemap overview</a>` +
+      (canRetry ? ` <button id="retry-btn" type="button">Retry</button>` : "");
+    if (canRetry) document.getElementById("retry-btn").addEventListener("click", ()=> location.reload());
+    status.textContent = "Index unavailable — page still navigable.";
+    q.disabled = true; langSel.disabled = true;
+  }
+
   let manifest;
   try {
-    manifest = await (await fetch("data/search-index.json", {cache:"no-store"})).json();
-  } catch(e){ status.textContent = "Index not built yet. Run: node scripts/build-pdf-index.mjs"; return; }
+    const r = await fetch("data/search-index.json", {cache:"no-store"});
+    if (!r.ok) throw new Error("HTTP " + r.status + " when loading data/search-index.json");
+    manifest = await r.json();
+    if (!manifest || !manifest.languages) throw new Error("Manifest missing 'languages' field");
+  } catch(e){
+    showError("Search index unavailable",
+      "Could not load <code>data/search-index.json</code> (" + (e.message||e) + "). " +
+      "If you are running locally, build it with <code>node scripts/build-pdf-index.mjs</code>. " +
+      "Use the navigation links below to browse the archive in the meantime.", true);
+    return;
+  }
 
   const langs = Object.keys(manifest.languages).sort();
-  const langSel = document.getElementById("lang");
   langs.forEach(l => {
     const o = document.createElement("option");
-    o.value = l; o.textContent = `${l.toUpperCase()} (${manifest.languages[l].count})`;
+    o.value = l; o.textContent = `${l.toUpperCase()}${RTL_LANGS.has(l)?" ⇇":""} (${manifest.languages[l].count})`;
     langSel.appendChild(o);
   });
   if (params.get("lang")) langSel.value = params.get("lang");
+  if (RTL_LANGS.has(langSel.value)) setRtl(true);
 
   const cache = {};
   async function load(lang){
     if (cache[lang]) return cache[lang];
-    const j = await (await fetch(manifest.languages[lang].file, {cache:"no-store"})).json();
-    return cache[lang] = j.docs.map(d => ({...d, lang}));
+    try {
+      const r = await fetch(manifest.languages[lang].file, {cache:"no-store"});
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const j = await r.json();
+      return cache[lang] = (j.docs||[]).map(d => ({...d, lang}));
+    } catch(e){
+      console.warn("Failed to load index for", lang, e);
+      return cache[lang] = [];
+    }
   }
 
-  const q = document.getElementById("q");
-  const results = document.getElementById("results");
   let timer;
   async function run(){
     const term = q.value.trim();
     const langs2 = langSel.value ? [langSel.value] : langs;
+    // Toggle RTL automatically when filtering to an RTL language.
+    if (langSel.value && RTL_LANGS.has(langSel.value)) setRtl(true);
     if (!term){ results.innerHTML=""; status.textContent = `Ready · ${Object.values(manifest.languages).reduce((a,l)=>a+l.count,0)} PDFs across ${langs.length} languages.`; return; }
     status.textContent = "Searching…";
     const re = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),"gi");
@@ -82,11 +135,14 @@
     });
     hits.sort((a,b)=>a.name.localeCompare(b.name));
     status.textContent = `${hits.length} match${hits.length===1?"":"es"} for "${term}"`;
-    results.innerHTML = hits.slice(0,200).map(h => `
-      <div class="hit">
+    results.innerHTML = hits.slice(0,200).map(h => {
+      const rtl = RTL_LANGS.has(h.lang);
+      return `
+      <div class="hit"${rtl?' dir="rtl"':''}>
         <h3><a href="${h.url}" rel="noopener" target="_blank">${h.name}</a> <small style="color:#888">[${h.lang.toUpperCase()}]</small></h3>
         <div class="snippet">${h.snippet}</div>
-      </div>`).join("");
+      </div>`;
+    }).join("");
   }
   q.addEventListener("input", ()=>{ clearTimeout(timer); timer = setTimeout(run, 220); });
   langSel.addEventListener("change", run);
