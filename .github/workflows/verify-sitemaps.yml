@@ -47,6 +47,36 @@ jobs:
       - name: Enforce canonical URLs
         run: node scripts/enforce-canonical.mjs .
 
+      - name: Regression — search/xref/sitemap integrity
+        run: |
+          set -e
+          fail=0
+          echo "## Regression checks" | tee /tmp/ci-report/regression.log
+          # 1. sitemap.xml exists
+          [ -f sitemap.xml ] || { echo "❌ sitemap.xml missing"; fail=1; }
+          [ -f robots.txt ] || { echo "❌ robots.txt missing"; fail=1; }
+          [ -f llms.txt ] || { echo "❌ llms.txt missing"; fail=1; }
+          # 2. PDF search indices loadable + non-empty
+          for f in data/search_*.json; do
+            [ -f "$f" ] || continue
+            node -e "const a=JSON.parse(require('fs').readFileSync('$f','utf8'));const n=Array.isArray(a)?a.length:(a.docs?a.docs.length:Object.keys(a).length);if(!n){process.exit(2)}" \
+              || { echo "❌ empty/broken: $f"; fail=1; }
+          done
+          # 3. xref.json loadable
+          if [ -f data/xref.json ]; then
+            node -e "JSON.parse(require('fs').readFileSync('data/xref.json','utf8'))" \
+              || { echo "❌ broken data/xref.json"; fail=1; }
+          fi
+          # 4. search-index.json loadable when present
+          if [ -f data/search-index.json ]; then
+            node -e "JSON.parse(require('fs').readFileSync('data/search-index.json','utf8'))" \
+              || { echo "❌ broken data/search-index.json"; fail=1; }
+          fi
+          if [ "$fail" = "0" ]; then echo "✅ regression checks passed"; fi
+          exit $fail
+        # Surface log to artifact
+        continue-on-error: false
+
       - name: Verify sitemap.xml is reachable on Pages
         env:
           BASE: https://et-pioneer.github.io/electric-navigator
