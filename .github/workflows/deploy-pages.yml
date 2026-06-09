@@ -40,6 +40,14 @@ jobs:
       - name: Enforce canonical URLs
         run: node scripts/enforce-canonical.mjs .
 
+      - name: Build sitemap.xml
+        env:
+          SITEMAP_BASE_URL: https://et-pioneer.github.io/electric-navigator
+        run: |
+          node scripts/build-sitemap.mjs
+          test -s sitemap.xml
+          grep -q '<loc>' sitemap.xml
+
       - name: Assemble static site for Pages
         run: |
           set -e
@@ -63,8 +71,12 @@ jobs:
             --exclude='eslint.config.*' \
             --exclude='components.json' \
             ./ _site/
-          # Sanity: index.html present
+          # Sanity: required files present (HTML entry, sitemap, hero/logo images, CSS)
           test -f _site/index.html
+          test -f _site/sitemap.xml
+          test -f _site/assets/css/style.css
+          test -f _site/assets/img/et-logo.jpg
+          test -f _site/assets/img/hero-logo.jpg
 
       - uses: actions/configure-pages@v5
 
