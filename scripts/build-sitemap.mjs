@@ -5,7 +5,7 @@ import { readdirSync, writeFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 const BASE_URL = process.env.SITEMAP_BASE_URL
-  || "https://et-pioneer.github.io/electric-navigator";
+  || "https://et-navigator.lovable.app";
 const ROOT = process.cwd();
 const TODAY = new Date().toISOString().slice(0, 10);
 
