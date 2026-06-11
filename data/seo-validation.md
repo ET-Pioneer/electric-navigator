@@ -1,13 +1,12 @@
 # SEO Validation Report
 
-- Generated: 2026-06-11T22:47:41.491Z
-- Pages: **70** · Passing: **70** · Failing: **0**
+- Generated: 2026-06-11T22:52:29.484Z
+- Pages: **35** · Passing: **35** · Failing: **0**
 
 ## Per-page results
 
 | File | Status | Issues |
 |------|--------|--------|
-| `index.html` | ✅ | — |
 | `ubi-pros-cons.html` | ✅ | — |
 | `ubi-pros-cons_ar.html` | ✅ | — |
 | `ubi-pros-cons_bg.html` | ✅ | — |
@@ -43,37 +42,3 @@
 | `ubi-pros-cons_ur.html` | ✅ | — |
 | `ubi-pros-cons_vi.html` | ✅ | — |
 | `ubi-pros-cons_zh.html` | ✅ | — |
-| `united_ar.html` | ✅ | — |
-| `united_bg.html` | ✅ | — |
-| `united_bn.html` | ✅ | — |
-| `united_ca.html` | ✅ | — |
-| `united_cs.html` | ✅ | — |
-| `united_da.html` | ✅ | — |
-| `united_de.html` | ✅ | — |
-| `united_el.html` | ✅ | — |
-| `united_es.html` | ✅ | — |
-| `united_fa.html` | ✅ | — |
-| `united_fi.html` | ✅ | — |
-| `united_fr.html` | ✅ | — |
-| `united_he.html` | ✅ | — |
-| `united_hi.html` | ✅ | — |
-| `united_hu.html` | ✅ | — |
-| `united_hy.html` | ✅ | — |
-| `united_id.html` | ✅ | — |
-| `united_it.html` | ✅ | — |
-| `united_ja.html` | ✅ | — |
-| `united_ko.html` | ✅ | — |
-| `united_ms.html` | ✅ | — |
-| `united_nl.html` | ✅ | — |
-| `united_no.html` | ✅ | — |
-| `united_pl.html` | ✅ | — |
-| `united_pt.html` | ✅ | — |
-| `united_ro.html` | ✅ | — |
-| `united_ru.html` | ✅ | — |
-| `united_sl.html` | ✅ | — |
-| `united_sv.html` | ✅ | — |
-| `united_th.html` | ✅ | — |
-| `united_tr.html` | ✅ | — |
-| `united_ur.html` | ✅ | — |
-| `united_vi.html` | ✅ | — |
-| `united_zh.html` | ✅ | — |

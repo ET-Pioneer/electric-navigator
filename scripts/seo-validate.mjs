@@ -7,9 +7,11 @@ import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const files = fs.readdirSync(ROOT).filter(f =>
-  /^(index\.html|united_[a-z]{2,3}\.html|ubi-pros-cons(_[a-z]{2,3})?\.html)$/.test(f)
-);
+const onlyUbi = process.argv.includes("--only=ubi");
+const allRe = /^(index\.html|united_[a-z]{2,3}\.html|ubi-pros-cons(_[a-z]{2,3})?\.html)$/;
+const ubiRe = /^ubi-pros-cons(_[a-z]{2,3})?\.html$/;
+const files = fs.readdirSync(ROOT).filter(f => (onlyUbi ? ubiRe : allRe).test(f));
+if (onlyUbi) console.log(`(UBI-only mode: validating ${files.length} variants)`);
 
 const REQUIRED = [
   { id: "canonical",        re: /<link[^>]+rel=["']canonical["'][^>]*href=["'][^"']+["']/i },

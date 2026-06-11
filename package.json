@@ -15,6 +15,10 @@
     "build:pdf-index": "node scripts/build-pdf-index.mjs",
     "build:ubi": "node scripts/build-ubi-page.mjs",
     "seo:validate": "node scripts/seo-validate.mjs",
+    "seo:validate:ubi": "node scripts/seo-validate.mjs --only=ubi",
+    "assert:sitemap": "node scripts/assert-sitemap-coverage.mjs",
+    "inject:ubi-nav": "node scripts/inject-ubi-nav.mjs",
+    "data:add-ubi": "node scripts/add-ubi-to-data.mjs",
     "prebuild": "node scripts/enforce-canonical.mjs ."
   },
   "dependencies": {
