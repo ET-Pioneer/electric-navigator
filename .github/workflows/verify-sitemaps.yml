@@ -47,6 +47,14 @@ jobs:
       - name: Enforce canonical URLs
         run: node scripts/enforce-canonical.mjs .
 
+      - name: SEO validation — canonical/hreflang/OpenGraph/Twitter per language
+        run: |
+          set -e
+          node scripts/build-ubi-page.mjs 2>&1 | tee /tmp/ci-report/ubi-build.log
+          node scripts/seo-validate.mjs 2>&1 | tee /tmp/ci-report/seo-validation.log
+          cp data/seo-validation.md /tmp/ci-report/ 2>/dev/null || true
+          cp data/seo-validation.json /tmp/ci-report/ 2>/dev/null || true
+
       - name: Regression — search/xref/sitemap integrity
         run: |
           set -e

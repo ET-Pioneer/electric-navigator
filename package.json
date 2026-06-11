@@ -13,6 +13,8 @@
     "test:watch": "vitest",
     "enforce:canonical": "node scripts/enforce-canonical.mjs .",
     "build:pdf-index": "node scripts/build-pdf-index.mjs",
+    "build:ubi": "node scripts/build-ubi-page.mjs",
+    "seo:validate": "node scripts/seo-validate.mjs",
     "prebuild": "node scripts/enforce-canonical.mjs ."
   },
   "dependencies": {
