@@ -42,7 +42,7 @@ jobs:
 
       - name: Build sitemap.xml
         env:
-          SITEMAP_BASE_URL: https://et-pioneer.github.io/electric-navigator
+          SITEMAP_BASE_URL: https://et-navigator.lovable.app
         run: |
           node scripts/build-sitemap.mjs
           test -s sitemap.xml
