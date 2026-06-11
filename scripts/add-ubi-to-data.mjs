@@ -28,6 +28,13 @@ let searchUpdated = 0, searchSkipped = 0;
 for (const lang of LANGS) {
   const f = path.join("data", `search_${lang}.json`);
   if (!fs.existsSync(f)) continue;
+  // Skip files externalized via lovable-assets (have a sibling .asset.json
+  // or themselves exceed the 10MB repo commit limit). The UBI entry will
+  // need to be re-added when those indices are next rebuilt.
+  const ext = f + ".asset.json";
+  if (fs.existsSync(ext)) continue;
+  const st = fs.statSync(f);
+  if (st.size > 9 * 1024 * 1024) { searchSkipped++; continue; }
   const idx = JSON.parse(fs.readFileSync(f, "utf8"));
   const docs = Array.isArray(idx) ? idx : (idx.docs || []);
   const url = urlFor(lang);
