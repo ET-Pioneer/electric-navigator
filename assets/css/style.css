@@ -217,6 +217,29 @@ body.nav-open{overflow:hidden}
 }
 [dir="rtl"] .section h2{border-left:none;border-right:4px solid var(--nato-gold);padding-left:0;padding-right:.75rem}
 .section p{max-width:72ch;color:var(--muted);margin:.5rem 0}
+/* Full-width text blocks on desktop & mobile; remain responsive when drawer opens */
+.section p,
+.section li,
+.section h2,
+.section h3,
+.hero .lede{max-width:100%}
+body.nav-open .container,
+body.nav-open .section,
+body.nav-open .hero{max-width:100%}
+
+/* Graphic novel section */
+.gn-list{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.6rem;grid-template-columns:1fr}
+@media(min-width:680px){.gn-list{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.gn-list{grid-template-columns:repeat(3,1fr)}}
+.gn-list a{
+  display:block;background:var(--surface);border:1px solid var(--border);
+  border-left:4px solid var(--nato-gold);
+  padding:.75rem 1rem;border-radius:var(--radius);text-decoration:none;
+  color:var(--nato-blue);font-weight:600;font-family:Arial,Helvetica,sans-serif;font-size:.95rem;
+}
+.gn-list a:hover{background:var(--surface-alt);border-color:var(--nato-accent)}
+.gn-backups{margin-top:1rem;display:grid;gap:.5rem}
+.gn-backups a{word-break:break-all}
 
 /* Card grid */
 .card-grid{
