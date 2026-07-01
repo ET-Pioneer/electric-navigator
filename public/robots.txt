@@ -1,5 +1,5 @@
-Sitemap: https://et-pioneer.github.io/electric-navigator/sitemap.xml
-Sitemap: https://et-pioneer.github.io/electric-navigator/sitemap-index.xml
+Sitemap: https://et-navigator.lovable.app/sitemap.xml
+Sitemap: https://et-navigator.lovable.app/sitemap-index.xml
 
 User-agent: Googlebot
 Allow: /
